@@ -1,0 +1,33 @@
+{
+  "name": "rednote-search",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Turn RedNote into search-first.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "prepare": "vp config"
+  },
+  "dependencies": {
+    "@vueuse/core": "^14.2.1",
+    "vue": "^3.5.29",
+    "vue-i18n": "^11.4.0"
+  },
+  "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^11.1.2",
+    "@wxt-dev/auto-icons": "^1.1.1",
+    "@wxt-dev/module-vue": "^1.0.3",
+    "typescript": "^5.9.3",
+    "vite-plus": "catalog:",
+    "vue-tsc": "^3.2.5",
+    "wxt": "^0.20.25"
+  },
+  "packageManager": "pnpm@10.33.2"
+}
