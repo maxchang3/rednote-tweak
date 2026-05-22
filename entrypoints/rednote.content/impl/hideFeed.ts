@@ -9,7 +9,10 @@ export const hideFeed = defineFeature({
     let currentPath = location.pathname
 
     const apply = () => {
-      toggleRootClass(ROOT_CLASS_NAME, isEnabled && currentPath.startsWith('/explore'))
+      toggleRootClass(
+        ROOT_CLASS_NAME,
+        isEnabled && currentPath.startsWith('/explore') && !currentPath.startsWith('/explore/'),
+      )
     }
 
     await onFeatureChange((nextEnabled) => {
