@@ -1,6 +1,6 @@
 {
   "name": "rednote-search",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "description": "Turn RedNote into search-first.",
   "type": "module",
