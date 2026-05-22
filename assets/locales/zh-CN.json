@@ -24,6 +24,10 @@
       "title": "直播",
       "description": "隐藏导航栏中的直播按钮。"
     },
+    "hideAIChat": {
+      "title": "AI 聊天",
+      "description": "隐藏导航栏的 AI 聊天按钮。"
+    },
     "hidePublishButton": {
       "title": "发布",
       "description": "隐藏导航栏中的发布按钮。"

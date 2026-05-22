@@ -15,6 +15,7 @@ export const FEATURE_GROUPS = [
     groupId: 'sidebar',
     features: [
       { id: 'hideLivelistButton', default: true },
+      { id: 'hideAIChat', default: false },
       { id: 'hidePublishButton', default: false },
       { id: 'hideNotificationButton', default: false },
       { id: 'hideNotificationBadge', default: false },

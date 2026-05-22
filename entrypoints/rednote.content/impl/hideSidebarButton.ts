@@ -9,6 +9,15 @@ const hideLivelistButton = defineFeature({
   },
 })
 
+const hideAIChat = defineFeature({
+  key: 'hideAIChat',
+  setup: async ({ onFeatureChange }) => {
+    await onFeatureChange((enabled) => {
+      toggleRootClass('RS_hide-sidebar-nav-ai-chat', enabled)
+    })
+  },
+})
+
 const hidePublishButton = defineFeature({
   key: 'hidePublishButton',
   setup: async ({ onFeatureChange }) => {
@@ -38,6 +47,7 @@ export const hideNotificationBadge = defineFeature({
 
 export const hideSidebarButton = [
   hideLivelistButton,
+  hideAIChat,
   hidePublishButton,
   hideNotificationButton,
   hideNotificationBadge,

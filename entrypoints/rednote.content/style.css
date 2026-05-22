@@ -68,6 +68,7 @@
 
 /*  侧（底）边栏功能精简  */
 .RS_hide-sidebar-nav-livelist :is(li, .bottom-channel):has(a[href^='/livelist']),
+.RS_hide-sidebar-nav-ai-chat :is(li, .bottom-channel):has(a[href^='/ai_chat']),
 .RS_hide-sidebar-nav-publish :is(li, .bottom-channel):has(a[href^='https://creator']),
 .RS_hide-sidebar-nav-notification :is(li, .bottom-channel):has(a[href='/notification']) {
   display: none !important;

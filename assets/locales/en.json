@@ -24,6 +24,10 @@
       "title": "Live",
       "description": "Hide the Live Stream button."
     },
+    "hideAIChat": {
+      "title": "AI Chat",
+      "description": "Hide the AI Chat button."
+    },
     "hidePublishButton": {
       "title": "Publish",
       "description": "Hide the Publish button."

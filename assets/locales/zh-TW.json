@@ -24,6 +24,10 @@
       "title": "直播",
       "description": "隱藏導覽列中的直播按鈕。"
     },
+    "hideAIChat": {
+      "title": "AI 聊天",
+      "description": "隱藏導覽列中的 AI 聊天按鈕。"
+    },
     "hidePublishButton": {
       "title": "發布",
       "description": "隱藏導覽列中的發布按鈕。"
