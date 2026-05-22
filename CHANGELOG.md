@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2026-05-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* v2 implementation overhaul
+
+### Features
+
+* v2 implementation overhaul ([f756d00](https://github.com/maxchang3/rednote-search/commit/f756d00ac149f4d27e67f8c2c5f1798d4a105f1a))
+* 适配新版样式（点点 AI） ([92146f0](https://github.com/maxchang3/rednote-search/commit/92146f01070680aac76904e3b5d6aedc9b7bc9e5))
+
 ## [1.0.1](https://github.com/maxchang3/rednote-search/compare/v1.0.0...v1.0.1) (2026-03-24)
 
 ### Bug Fixes
