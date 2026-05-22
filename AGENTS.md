@@ -26,7 +26,28 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
 
 ## Conventions
 
-- **Auto-imports:** Vue APIs (`ref`, `computed`, `watch`, etc.) are auto-imported by `@wxt-dev/module-vue`. Shared modules in `shared/` are auto-imported via `imports.dirs`. Components in `components/` are auto-imported via `unplugin-vue-components`. No manual imports needed in `.vue` files.
+## Conventions
+
+- **Auto-imports:**
+  This project uses `unimport` (via WXT) to handle auto-imports.
+
+  By default, WXT sets up auto-imports for its **own APIs** as well as selected project directories, including:
+
+  ```text
+  <srcDir>/components/*
+  <srcDir>/composables/*
+  <srcDir>/hooks/*
+  <srcDir>/utils/*
+  ```
+
+  Vue APIs (`ref`, `computed`, `watch`, etc.) are automatically handled via `@wxt-dev/module-vue`.
+
+  In addition, shared modules in `shared/` are auto-imported via `imports.dirs`, and components in `components/` are auto-registered via `unplugin-vue-components`.
+
+  As a result, all named and default exports from these locations are available globally across the project without explicit imports in `.vue` files.
+
+  **Do not import them manually.**
+
 - **Adding a feature:** Define it in `shared/const.ts` under a `FEATURE_GROUPS` entry, create an impl file in `entrypoints/rednote.content/impl/`, export it from `impl/index.ts`, add it to the `featureRegistrations` array in `features.ts`, and add i18n keys to `assets/locales/*.json`.
 
 ## Build & Development
