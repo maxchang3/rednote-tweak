@@ -1,3 +1,8 @@
 {
-  "recommendations": ["Vue.volar", "VoidZero.vite-plus-extension-pack", "lokalise.i18n-ally"]
+  "recommendations": [
+    "Vue.volar",
+    "VoidZero.vite-plus-extension-pack",
+    "lokalise.i18n-ally",
+    "antfu.unocss"
+  ]
 }

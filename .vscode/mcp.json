@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "shadcnVue": {
+      "command": "vpx",
+      "args": ["shadcn-vue@latest", "mcp"]
+    }
+  }
+}

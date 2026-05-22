@@ -2,6 +2,7 @@ allowBuilds:
   esbuild: true
   sharp: true
   spawn-sync: true
+  vue-demi: true
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest

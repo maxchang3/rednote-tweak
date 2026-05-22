@@ -1,20 +1,22 @@
 <script lang="ts" setup>
-import HelloWorld from '@/components/HelloWorld.vue'
+import FeaturesPage from './pages/FeaturesPage.vue'
 
-const { syncedLocale } = useLocale()
+type PopupPage = 'features'
+
+const currentPage = shallowRef<PopupPage>('features')
+const pageMap = {
+  features: FeaturesPage,
+} as const
+
+const currentPageComponent = computed(() => pageMap[currentPage.value])
+
+const { actualLocale } = useLocale()
 </script>
 
 <template>
   <div>
-    <div>
-      <select v-model="syncedLocale">
-        <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
-          {{ LOCALE_NATIVE_NAMES[locale as I18nLocales] }}
-        </option>
-      </select>
-    </div>
-    <div class="app-content">
-      <HelloWorld msg="WXT + Vue" />
-    </div>
+    <PopupHeader v-model="actualLocale" />
+
+    <component :is="currentPageComponent" />
   </div>
 </template>

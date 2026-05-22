@@ -1,4 +1,6 @@
 {
+  "#currentLocale": "zh-TW",
+  "#nativeName": "繁體中文",
   "title": "小紅搜",
   "reset": "重設設定",
   "features": {
@@ -6,31 +8,33 @@
       "title": "隱藏首頁資訊流",
       "description": "隱藏首頁資訊流，讓搜尋框頁面置中。"
     },
-    "hideSidebarButton": {
-      "livelist": {
-        "title": "直播",
-        "description": "隱藏導覽列中的直播按鈕。"
-      },
-      "publish": {
-        "title": "發布",
-        "description": "隱藏導覽列中的發布按鈕。"
-      },
-      "notification": {
-        "title": "通知",
-        "description": "隱藏導覽列中的通知按鈕。"
-      }
-    },
     "hideSearchSuggestions": {
       "title": "隱藏「猜你想搜」",
       "description": "隱藏搜尋框下方的「猜你想搜」提示。"
     },
-    "hideNotificationBadge": {
-      "title": "隱藏通知小紅點",
-      "description": "隱藏通知按鈕上的未讀小紅點。"
-    },
     "slashFocus": {
       "title": "斜線聚焦搜尋",
       "description": "按下 / 時，自動聚焦到搜尋框。"
+    },
+    "hideLivelistButton": {
+      "title": "直播",
+      "description": "隱藏導覽列中的直播按鈕。"
+    },
+    "hidePublishButton": {
+      "title": "發布",
+      "description": "隱藏導覽列中的發布按鈕。"
+    },
+    "hideNotificationButton": {
+      "title": "通知",
+      "description": "隱藏導覽列中的通知按鈕。"
+    },
+    "hideNotificationBadge": {
+      "title": "隱藏通知小紅點",
+      "description": "隱藏通知按鈕上的未讀小紅點。"
     }
+  },
+  "groups": {
+    "general": "一般",
+    "sidebar": "側邊欄"
   }
 }

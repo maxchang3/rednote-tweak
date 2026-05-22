@@ -1,3 +1,46 @@
+# Project Overview
+
+[**小红搜 — RedNote Search**](https://github.com/maxchang3/rednote-search) is a cross-browser extension (Chrome, Firefox, Edge) that turns [Xiaohongshu (小红书)](https://www.xiaohongshu.com) into a search-first experience. It hides distracting feeds, sidebar navigation, and search suggestions — all configurable from the popup. Built with **WXT** on top of Vite.
+
+## Tech Stack
+
+- **Framework:** [WXT](https://wxt.dev) — browser extension framework with Vite under the hood
+- **UI (Popup):** Vue 3 Composition API + `<script setup>` + TypeScript
+- **Components:** [shadcn-vue](https://www.shadcn-vue.com/) (New York style) + [reka-ui](https://reka-ui.com/) + [Lucide](https://lucide.dev/) icons
+- **Styling:** [UnoCSS](https://unocss.dev/) (Preset Wind 3) + [unocss-preset-shadcn](https://github.com/unocss-community/unocss-preset-shadcn)
+- **State:** [wxt/storage](https://wxt.dev/guide/essentials/storage.html) wrapped in Vue composables (`useStoredValue`, `useFeatureState`)
+- **i18n:** [vue-i18n](https://vue-i18n.intlify.dev/) with JSON locale files in `assets/locales/` and extension manifest messages in `public/_locales/`
+- **Tooling:** [Vite+](https://vite.plus/) (`vp`) — see section below
+- **Package Manager:** pnpm (via Vite+ `vp add` / `vp install`)
+
+## Data Flow
+
+```
+Popup (Vue) ──write──> wxt/storage <──watch── Content Script
+                          │
+                    Feature toggle changes
+                    trigger onFeatureChange
+                    callbacks that apply/remove
+                    DOM mutations
+```
+
+## Conventions
+
+- **Auto-imports:** Vue APIs (`ref`, `computed`, `watch`, etc.) are auto-imported by `@wxt-dev/module-vue`. Shared modules in `shared/` are auto-imported via `imports.dirs`. Components in `components/` are auto-imported via `unplugin-vue-components`. No manual imports needed in `.vue` files.
+- **Adding a feature:** Define it in `shared/const.ts` under a `FEATURE_GROUPS` entry, create an impl file in `entrypoints/rednote.content/impl/`, export it from `impl/index.ts`, add it to the `featureRegistrations` array in `features.ts`, and add i18n keys to `assets/locales/*.json`.
+
+## Build & Development
+
+```sh
+vp install          # Install dependencies
+vp run dev          # Start WXT dev server (Chromium)
+vp run dev:firefox  # Start WXT dev server (Firefox)
+vp run build        # Production build
+vp run compile      # Type-check with vue-tsc
+```
+
+Use `vp check` to run format, lint, and type checks together.
+
 <!--VITE PLUS START-->
 
 # Using Vite+, the Unified Toolchain for the Web

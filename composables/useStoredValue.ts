@@ -11,7 +11,11 @@ export default function <T>(
     state,
     execute: _, // Don't include "execute" in returned object
     ...asyncState
-  } = useAsyncState<T | null, [], true>(() => storage.getItem(key), initialValue ?? null, opts)
+  } = useAsyncState<T | null, [], true>(
+    async () => (await storage.getItem<T>(key)) ?? initialValue ?? null,
+    initialValue ?? null,
+    opts,
+  )
 
   // Listen for changes
   let unwatch: (() => void) | undefined

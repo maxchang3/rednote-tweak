@@ -1,9 +1,34 @@
-export enum STORAGE_KEY {
-  LOCALE = 'local:locale',
-}
+export const STORAGE_KEY_LOCALE = 'local:locale'
+export const STORAGE_KEY_FEATURE_PREFIX = 'local:feature:' as const
 
-export const LOCALE_NATIVE_NAMES: Record<I18nLocales, string> = {
-  en: 'English',
-  'zh-CN': '简体中文',
-  'zh-TW': '繁體中文',
+export const FEATURE_GROUPS = [
+  {
+    groupId: 'general',
+    features: [
+      { id: 'hideFeed', default: true },
+      { id: 'hideSearchSuggestions', default: true },
+      { id: 'slashFocus', default: true },
+    ],
+  },
+  {
+    groupId: 'sidebar',
+    features: [
+      { id: 'hideLivelistButton', default: true },
+      { id: 'hidePublishButton', default: false },
+      { id: 'hideNotificationButton', default: false },
+      { id: 'hideNotificationBadge', default: false },
+    ],
+  },
+] as const
+
+type FeatureGroup = (typeof FEATURE_GROUPS)[number]
+
+export type FeatureKey = FeatureGroup['features'][number]['id']
+
+export const FEATURE_KEYS = FEATURE_GROUPS.flatMap((g) => g.features.map((f) => f.id))
+
+export const FEATURE_DEFAULTS = Object.fromEntries(
+  FEATURE_GROUPS.flatMap((g) => g.features.map((f) => [f.id, f.default])),
+) as {
+  [K in FeatureKey]: boolean
 }

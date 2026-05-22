@@ -7,13 +7,19 @@ export type I18nSchema = typeof schema
 export type I18nLocales = 'en' | 'zh-CN' | 'zh-TW'
 
 async function getLocale() {
-  const stored = await storage.getItem<unknown>(STORAGE_KEY.LOCALE)
+  const stored = await storage.getItem<unknown>(STORAGE_KEY_LOCALE)
   if (stored && typeof stored === 'string') return stored
   const browserLang = browser.i18n.getUILanguage()
   return browserLang
 }
 
 export const userLocale = await getLocale()
+
+export const LOCALE_NATIVE_NAMES: Record<I18nLocales, string> = {
+  en: 'English',
+  'zh-CN': '简体中文',
+  'zh-TW': '繁體中文',
+}
 
 export default createI18n<[I18nSchema], I18nLocales>({
   legacy: false,
@@ -22,9 +28,8 @@ export default createI18n<[I18nSchema], I18nLocales>({
   fallbackLocale: {
     'zh-HK': ['zh-TW'],
     'zh-MO': ['zh-TW'],
-    'zh-Hant': ['zh-TW'],
-    'zh-Hans': ['zh-CN'],
     zh: ['zh-CN'],
     default: ['en'],
   },
+  fallbackWarn: true,
 })

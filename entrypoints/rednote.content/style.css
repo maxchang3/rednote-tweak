@@ -1,0 +1,63 @@
+#mfContainer {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+.RS_hide-feed #mfContainer {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none !important;
+}
+
+.RS_hide-feed body {
+  overflow: hidden !important;
+}
+
+.RS_hide-feed .mask-paper {
+  background: none !important;
+  backdrop-filter: none !important;
+  min-height: 100vh;
+}
+
+.RS_hide-feed .input-box {
+  top: 35%;
+  left: 55% !important;
+}
+
+.RS_hide-feed .side-bar {
+  z-index: 999;
+}
+
+@media screen and (max-width: 695px) {
+  .RS_hide-feed .input-box {
+    width: 80% !important;
+    padding: 0 84px 0 16px !important;
+  }
+  .RS_hide-feed .min-width-search-icon {
+    display: none !important;
+  }
+  .RS_hide-feed .input-button {
+    opacity: 1 !important;
+  }
+  .RS_hide-feed #search-input {
+    padding: 10px;
+  }
+}
+
+.RS_hide-sidebar-nav-livelist :is(li, .bottom-channel):has(a[href^='/livelist']),
+.RS_hide-sidebar-nav-publish :is(li, .bottom-channel):has(a[href^='https://creator']),
+.RS_hide-sidebar-nav-notification :is(li, .bottom-channel):has(a[href='/notification']) {
+  display: none !important;
+}
+
+.RS_hide-search-suggestions .sug-box:has(.header) {
+  display: none !important;
+}
+
+.RS_hide-notification-badge .badge-container .count {
+  display: none !important;
+}

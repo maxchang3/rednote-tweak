@@ -1,5 +1,7 @@
 import { defineConfig, type WxtViteConfig } from 'wxt'
+import Components from 'unplugin-vue-components/vite'
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
+import UnoCSS from 'unocss/vite'
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
@@ -32,11 +34,15 @@ export default defineConfig({
   vite: () =>
     <WxtViteConfig>{
       plugins: [
+        Components({
+          dirs: ['components'],
+        }),
         // See https://vue-i18n.intlify.dev/guide/advanced/optimization.html
         vueI18n({
           module: 'petite-vue-i18n',
           include: 'assets/locales/*.json',
         }),
+        UnoCSS(),
       ],
     },
   webExt: {

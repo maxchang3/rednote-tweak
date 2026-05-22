@@ -1,4 +1,6 @@
 {
+  "#currentLocale": "en",
+  "#nativeName": "English",
   "title": "Rednote Search",
   "reset": "Reset",
   "features": {
@@ -6,31 +8,33 @@
       "title": "Hide home timeline",
       "description": "Hide home timeline, center search view."
     },
-    "hideSidebarButton": {
-      "livelist": {
-        "title": "Live",
-        "description": "Hide the Live Stream button in the sidebar."
-      },
-      "publish": {
-        "title": "Publish",
-        "description": "Hide the Publish button in the sidebar."
-      },
-      "notification": {
-        "title": "Notifications",
-        "description": "Hide the Notifications button in the sidebar."
-      }
-    },
     "hideSearchSuggestions": {
       "title": "Hide suggested searches",
       "description": "Hide the suggested searches."
     },
-    "hideNotificationBadge": {
-      "title": "Hide notification badge",
-      "description": "Hide the unread badge."
-    },
     "slashFocus": {
       "title": "Focus search with slash",
       "description": "Press / to focus the search box automatically."
+    },
+    "hideLivelistButton": {
+      "title": "Live",
+      "description": "Hide the Live Stream button."
+    },
+    "hidePublishButton": {
+      "title": "Publish",
+      "description": "Hide the Publish button."
+    },
+    "hideNotificationButton": {
+      "title": "Notifications",
+      "description": "Hide the Notifications button."
+    },
+    "hideNotificationBadge": {
+      "title": "Hide notification badge",
+      "description": "Hide the unread badge on the button."
     }
+  },
+  "groups": {
+    "general": "General",
+    "sidebar": "Sidebar"
   }
 }
