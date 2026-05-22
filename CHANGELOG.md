@@ -2,17 +2,15 @@
 
 ## [2.0.2](https://github.com/maxchang3/rednote-search/compare/v2.0.1...v2.0.2) (2026-05-22)
 
-
 ### Bug Fixes
 
-* **popup/searchPage:** resolve width inconsistency between Chrome and Firefox ([a4e81dd](https://github.com/maxchang3/rednote-search/commit/a4e81dd5e3f299e53f948d07bd80fe6d3c909c67))
+- **popup/searchPage:** resolve width inconsistency between Chrome and Firefox ([a4e81dd](https://github.com/maxchang3/rednote-search/commit/a4e81dd5e3f299e53f948d07bd80fe6d3c909c67))
 
 ## [2.0.1](https://github.com/maxchang3/rednote-search/compare/v2.0.0...v2.0.1) (2026-05-22)
 
-
 ### Bug Fixes
 
-* **hideFeed:** refine condition for toggling root class ([4fb8562](https://github.com/maxchang3/rednote-search/commit/4fb85628d99a56175f5882d8f0ec9166c7d2e73a))
+- **hideFeed:** refine condition for toggling root class ([4fb8562](https://github.com/maxchang3/rednote-search/commit/4fb85628d99a56175f5882d8f0ec9166c7d2e73a))
 
 ## [2.0.0](https://github.com/maxchang3/rednote-search/compare/v1.0.2...v2.0.0) (2026-05-22)
 
