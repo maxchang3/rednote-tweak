@@ -3,6 +3,13 @@
   "#nativeName": "繁體中文",
   "title": "小紅搜",
   "reset": "重設設定",
+  "popupPages": {
+    "settings": "設定",
+    "search": "搜尋"
+  },
+  "searchPage": {
+    "placeholder": "在小紅書中搜尋"
+  },
   "features": {
     "searchSelectedText": {
       "title": "選取文字右鍵搜尋",

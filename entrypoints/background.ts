@@ -2,11 +2,6 @@ const MENU_ID = 'search-on-xiaohongshu'
 const FEATURE_KEY: FeatureKey = 'searchSelectedText'
 const FEATURE_STORAGE_KEY = getFeatureStorageKey(FEATURE_KEY)
 
-function buildSearchUrl(keyword: string) {
-  const params = new URLSearchParams({ keyword })
-  return `https://www.xiaohongshu.com/search_result?${params.toString()}`
-}
-
 async function removeMenuIfExists() {
   try {
     await browser.contextMenus.remove(MENU_ID)
@@ -51,7 +46,7 @@ export default defineBackground(() => {
     }
 
     await browser.tabs.create({
-      url: buildSearchUrl(info.selectionText.trim()),
+      url: buildXiaohongshuSearchUrl(info.selectionText.trim()),
     })
   })
 })

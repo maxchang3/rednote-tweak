@@ -11,7 +11,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Button: typeof import('./components/ui/button/Button.vue')['default']
     FeatureItem: typeof import('./components/FeatureItem.vue')['default']
+    Input: typeof import('./components/ui/input/Input.vue')['default']
     Label: typeof import('./components/ui/label/Label.vue')['default']
     LocaleSelect: typeof import('./components/LocaleSelect.vue')['default']
     NativeSelect: typeof import('./components/ui/native-select/NativeSelect.vue')['default']

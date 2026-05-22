@@ -8,7 +8,7 @@ const { featureStateMap, isReady } = useFeatureStateMap()
     <Spinner />
   </div>
 
-  <main v-else class="flex flex-col">
+  <section v-else class="flex flex-col">
     <section v-for="group in FEATURE_GROUPS" :key="group.groupId" class="flex flex-col gap-2">
       <h3 class="text-sm font-semibold text-gray-500">
         {{ t(`groups.${group.groupId}`) }}
@@ -31,5 +31,5 @@ const { featureStateMap, isReady } = useFeatureStateMap()
         />
       </div>
     </section>
-  </main>
+  </section>
 </template>

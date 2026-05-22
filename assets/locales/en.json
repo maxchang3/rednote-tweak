@@ -3,6 +3,13 @@
   "#nativeName": "English",
   "title": "Rednote Search",
   "reset": "Reset",
+  "popupPages": {
+    "settings": "Settings",
+    "search": "Search"
+  },
+  "searchPage": {
+    "placeholder": "Search on Rednote"
+  },
   "features": {
     "searchSelectedText": {
       "title": "Search selected text",
