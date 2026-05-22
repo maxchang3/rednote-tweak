@@ -13,6 +13,8 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v5
@@ -23,6 +25,20 @@ jobs:
           cache: true
 
       - run: vp install
+
+      - if: github.event_name == 'pull_request'
+        run: vp check --fix || true
+
+      - if: github.event_name == 'pull_request'
+        name: Commit auto-fix changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet --exit-code; then
+            git add -A
+            git commit -m "chore: lint fix [skip ci]"
+            git push
+          fi
 
       - run: vp check
 
