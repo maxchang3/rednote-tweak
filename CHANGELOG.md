@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/maxchang3/rednote-search/compare/v2.0.1...v2.0.2) (2026-05-22)
+
+
+### Bug Fixes
+
+* **popup/searchPage:** resolve width inconsistency between Chrome and Firefox ([a4e81dd](https://github.com/maxchang3/rednote-search/commit/a4e81dd5e3f299e53f948d07bd80fe6d3c909c67))
+
 ## [2.0.1](https://github.com/maxchang3/rednote-search/compare/v2.0.0...v2.0.1) (2026-05-22)
 
 
