@@ -3,8 +3,8 @@
 [English](./README.en.md)
 
 <p align="center">
-  <img width="50%"  src="https://github.com/user-attachments/assets/ad8d0cde-01c3-46f8-a2a1-f3ed3432a353" />
-  <img width="20%"  src="https://github.com/user-attachments/assets/fee087b9-e793-456c-8caa-741f713518ee" />
+  <img width="50%"  src="https://github.com/user-attachments/assets/c476b57d-bf01-4ffb-8148-a0c21d6dba00" />
+  <img width="23%"  src="https://github.com/user-attachments/assets/e7dd8ac2-403a-49fd-bea1-c73cf2567eb5" />
 </p>
 
 增强小红书网页版的一些功能，将其改造成搜索工具。
