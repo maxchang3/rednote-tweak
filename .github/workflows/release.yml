@@ -35,20 +35,18 @@ jobs:
         with:
           ref: ${{ needs.release-please.outputs.tag_name }}
 
-      - uses: pnpm/action-setup@v4
-
-      - uses: actions/setup-node@v4
+      - uses: voidzero-dev/setup-vp@v1
         with:
           node-version: 24
-          cache: pnpm
+          cache: true
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: vp install --frozen-lockfile
 
       - name: Zip extensions
         run: |
-          pnpm zip
-          pnpm zip:firefox
+          vpr zip
+          vpr zip:firefox
 
       - name: Upload release assets
         uses: softprops/action-gh-release@v2
@@ -60,7 +58,7 @@ jobs:
 
       # - name: Submit to stores
       #   run: |
-      #     pnpm wxt submit \
+      #     vp exec wxt submit \
       #       --chrome-zip .output/*-chrome.zip \
       #       --firefox-zip .output/*-firefox.zip \
       #       --firefox-sources-zip .output/*-sources.zip
