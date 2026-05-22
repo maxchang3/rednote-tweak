@@ -3,8 +3,8 @@
 [简体中文](./README.md)
 
 <p align="center">
-  <img width="50%"  src="https://github.com/user-attachments/assets/ad8d0cde-01c3-46f8-a2a1-f3ed3432a353" />
-  <img width="20%"  src="https://github.com/user-attachments/assets/fee087b9-e793-456c-8caa-741f713518ee" />
+  <img width="50%"  src="https://github.com/user-attachments/assets/b943c31f-ca24-4f2f-b907-4958391622b8" />
+  <img width="23%"  src="https://github.com/user-attachments/assets/3daf5643-14a0-455d-8531-b1277f3aae51" />
 </p>
 
 Enhance the Xiaohongshu (RedNote) web experience and turn it into a search tool.
