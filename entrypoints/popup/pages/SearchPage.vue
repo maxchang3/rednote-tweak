@@ -27,14 +27,14 @@ onMounted(() => {
         v-model="keyword"
         type="search"
         :placeholder="$t('searchPage.placeholder')"
-        class="h-10 min-w-0 flex-1"
+        class="h-10 min-w-0 flex-1 rounded-2xl"
       />
 
       <Button
         type="submit"
         variant="default"
         size="icon-lg"
-        class="shrink-0"
+        class="shrink-0 rounded-full"
         :disabled="!keyword.trim()"
         aria-label="Search on Xiaohongshu"
       >
