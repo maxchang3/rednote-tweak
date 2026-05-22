@@ -26,8 +26,6 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
 
 ## Conventions
 
-## Conventions
-
 - **Auto-imports:**
   This project uses `unimport` (via WXT) to handle auto-imports.
 
