@@ -20,9 +20,11 @@ async function syncMenuEnabled(enabled: boolean) {
 
   if (!enabled) return
 
+  const title = browser.i18n.getMessage('searchSelectedTextMenuTitle')
+
   browser.contextMenus.create({
     id: MENU_ID,
-    title: '小红书搜索: "%s"',
+    title: title,
     contexts: ['selection'],
   })
 }
