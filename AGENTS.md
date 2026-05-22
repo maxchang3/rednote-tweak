@@ -48,6 +48,9 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
 
   **Do not import them manually.**
 
+- **Use Standard Components:**
+  Prioritize provided components for consistency. As needed, add new ones to components/ui/ via shadcn-vue. You can retrieve shadcn-vue skills from `.agents/skills/shadcn-vue` or utilize its MCP server.
+
 - **Adding a feature:** Define it in `shared/const.ts` under a `FEATURE_GROUPS` entry, create an impl file in `entrypoints/rednote.content/impl/`, export it from `impl/index.ts`, add it to the `featureRegistrations` array in `features.ts`, and add i18n keys to `assets/locales/*.json`.
 
 ## Build & Development
