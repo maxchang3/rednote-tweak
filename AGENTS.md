@@ -44,7 +44,7 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
 
   As a result, all named and default exports from these locations are available globally across the project without explicit imports in `.vue` files.
 
-  **Do not import them manually.**
+  **Do not import them manually.** If you encounter errors, first run `vp run prepare` to regenerate types or restart the dev server. Only investigate further if the issue persists.
 
 - **Use Standard Components:**
   Prioritize provided components for consistency. As needed, add new ones to components/ui/ via shadcn-vue. You can retrieve shadcn-vue skills from `.agents/skills/shadcn-vue` or utilize its MCP server.
