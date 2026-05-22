@@ -1,4 +1,7 @@
-#mfContainer {
+/** 信息流初始样式（过渡用） */
+#mfContainer:not(:has(.search-area)), /** 旧版本容器不包含搜索区域 */
+#exploreFeeds,
+.channel-container {
   opacity: 1;
   transform: translateY(0);
   transition:
@@ -7,12 +10,17 @@
   will-change: opacity, transform;
 }
 
-.RS_hide-feed #mfContainer {
+/** 净化信息流 */
+.RS_hide-feed #mfContainer:not(:has(.search-area)),
+.RS_hide-feed #exploreFeeds,
+.RS_hide-feed .channel-container,
+.RS_hide-feed #ssr-skeleton {
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none !important;
 }
 
+.RS_hide-feed #mfContainer:has(.search-area),
 .RS_hide-feed body {
   overflow: hidden !important;
 }
@@ -23,7 +31,13 @@
   min-height: 100vh;
 }
 
-.RS_hide-feed .input-box {
+/* 调整搜索区域的整体垂直位置（新版） */
+.RS_hide-feed .search-area {
+  transform: translateY(155%);
+}
+
+/* 调整独立搜索框的位置（旧版） */
+.RS_hide-feed .input-box:not(.search-box-in-content) {
   top: 35%;
   left: 55% !important;
 }
@@ -32,32 +46,40 @@
   z-index: 999;
 }
 
+/** 移动端搜索框适配 */
 @media screen and (max-width: 695px) {
-  .RS_hide-feed .input-box {
+  .RS_hide-feed .input-box:not(.search-box-in-content) {
     width: 80% !important;
     padding: 0 84px 0 16px !important;
   }
+
   .RS_hide-feed .min-width-search-icon {
     display: none !important;
   }
+
   .RS_hide-feed .input-button {
     opacity: 1 !important;
   }
+
   .RS_hide-feed #search-input {
     padding: 10px;
   }
 }
 
+/*  侧（底）边栏功能精简  */
 .RS_hide-sidebar-nav-livelist :is(li, .bottom-channel):has(a[href^='/livelist']),
 .RS_hide-sidebar-nav-publish :is(li, .bottom-channel):has(a[href^='https://creator']),
 .RS_hide-sidebar-nav-notification :is(li, .bottom-channel):has(a[href='/notification']) {
   display: none !important;
 }
 
-.RS_hide-search-suggestions .sug-box:has(.header) {
+/* 搜索建议净化 */
+.RS_hide-search-suggestions .sug-box:has(.header),
+.RS_hide-search-suggestions .suggestion-section {
   display: none !important;
 }
 
+/** 隐藏通知角标 */
 .RS_hide-notification-badge .badge-container .count {
   display: none !important;
 }
