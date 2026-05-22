@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.0.0](https://github.com/maxchang3/rednote-search/compare/v1.0.2...v2.0.0) (2026-05-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* v2 implementation overhaul
+
+### Features
+
+* add context menu for searching selected text ([a8d1764](https://github.com/maxchang3/rednote-search/commit/a8d1764160db7706de3b45a7d7543e925d6deaa2))
+* add feature to hide AI Chat button in sidebar ([37010d9](https://github.com/maxchang3/rednote-search/commit/37010d959b18c251f7b942f879be5dbc338bc2fd))
+* add popup search page ([b3f81bb](https://github.com/maxchang3/rednote-search/commit/b3f81bbb0f1baf91beec5dfac3217d755ac0cc77))
+* **popup:** grid layout for sidebar features; remove sidebar descriptions; update locales ([bb88bc1](https://github.com/maxchang3/rednote-search/commit/bb88bc1aefa236810ba78ea767b2020bf27373c0))
+* v2 implementation overhaul ([f756d00](https://github.com/maxchang3/rednote-search/commit/f756d00ac149f4d27e67f8c2c5f1798d4a105f1a))
+* 适配新版样式（点点 AI） ([92146f0](https://github.com/maxchang3/rednote-search/commit/92146f01070680aac76904e3b5d6aedc9b7bc9e5))
+
+
+### Bug Fixes
+
+* **context-menu:** use browser i18n for menu title ([e83df68](https://github.com/maxchang3/rednote-search/commit/e83df68a6aaac206969a42aca43e9b649e72ebc8))
+
 ## [1.0.1](https://github.com/maxchang3/rednote-search/compare/v1.0.0...v1.0.1) (2026-03-24)
 
 ### Bug Fixes
