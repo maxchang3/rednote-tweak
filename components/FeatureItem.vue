@@ -2,6 +2,8 @@
 defineProps<{
   featureKey: string
   modelValue: boolean
+  title?: string
+  description?: string
 }>()
 
 defineEmits<{
@@ -15,10 +17,10 @@ const { t } = useI18n()
   <div class="item-card">
     <div class="min-w-0 flex-1">
       <Label class="block leading-tight" :for="featureKey">
-        {{ t(`features.${featureKey}.title`) }}
+        {{ (typeof title !== 'undefined' && title) || t(`features.${featureKey}.title`) }}
       </Label>
-      <p class="mt-1 text-xs leading-4 text-muted-foreground">
-        {{ t(`features.${featureKey}.description`) }}
+      <p v-if="description" class="mt-1 text-xs leading-4 text-muted-foreground">
+        {{ description }}
       </p>
     </div>
     <Switch

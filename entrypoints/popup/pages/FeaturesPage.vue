@@ -14,13 +14,19 @@ const { featureStateMap, isReady } = useFeatureStateMap()
         {{ t(`groups.${group.groupId}`) }}
       </h3>
 
-      <div class="flex flex-col gap-1 pb-2">
+      <div
+        :class="
+          group.groupId === 'sidebar' ? 'grid grid-cols-2 gap-2 pb-2' : 'flex flex-col gap-1 pb-2'
+        "
+      >
         <FeatureItem
           v-for="feature in group.features"
           :key="feature.id"
           :feature-key="feature.id"
           :title="t(`features.${feature.id}.title`)"
-          :description="t(`features.${feature.id}.description`)"
+          :description="
+            group.groupId === 'sidebar' ? undefined : t(`features.${feature.id}.description`)
+          "
           v-model="featureStateMap[feature.id].value"
         />
       </div>

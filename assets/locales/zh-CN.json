@@ -21,24 +21,19 @@
       "description": "按下 / 时，自动聚焦到搜索框。"
     },
     "hideLivelistButton": {
-      "title": "直播",
-      "description": "隐藏导航栏中的直播按钮。"
+      "title": "隐藏直播"
     },
     "hideAIChat": {
-      "title": "AI 聊天",
-      "description": "隐藏导航栏的 AI 聊天按钮。"
+      "title": "隐藏 AI 聊天"
     },
     "hidePublishButton": {
-      "title": "发布",
-      "description": "隐藏导航栏中的发布按钮。"
+      "title": "隐藏发布"
     },
     "hideNotificationButton": {
-      "title": "通知",
-      "description": "隐藏导航栏中的通知按钮。"
+      "title": "隐藏通知"
     },
     "hideNotificationBadge": {
-      "title": "隐藏通知小红点",
-      "description": "隐藏通知按钮上的未读小红点。"
+      "title": "隐藏通知小红点"
     }
   },
   "groups": {

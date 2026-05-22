@@ -21,24 +21,19 @@
       "description": "Press / to focus the search box automatically."
     },
     "hideLivelistButton": {
-      "title": "Live",
-      "description": "Hide the Live Stream button."
+      "title": "Hide Livelist"
     },
     "hideAIChat": {
-      "title": "AI Chat",
-      "description": "Hide the AI Chat button."
+      "title": "Hide AI Chat"
     },
     "hidePublishButton": {
-      "title": "Publish",
-      "description": "Hide the Publish button."
+      "title": "Hide Publish"
     },
     "hideNotificationButton": {
-      "title": "Notifications",
-      "description": "Hide the Notifications button."
+      "title": "Hide Notifs."
     },
     "hideNotificationBadge": {
-      "title": "Hide notification badge",
-      "description": "Hide the unread badge on the button."
+      "title": "Hide notif badge"
     }
   },
   "groups": {
