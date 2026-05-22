@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/maxchang3/rednote-search/compare/v2.0.0...v2.0.1) (2026-05-22)
+
+
+### Bug Fixes
+
+* **hideFeed:** refine condition for toggling root class ([4fb8562](https://github.com/maxchang3/rednote-search/commit/4fb85628d99a56175f5882d8f0ec9166c7d2e73a))
+
 ## [2.0.0](https://github.com/maxchang3/rednote-search/compare/v1.0.2...v2.0.0) (2026-05-22)
 
 ### ⚠ BREAKING CHANGES
