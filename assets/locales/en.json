@@ -4,6 +4,10 @@
   "title": "Rednote Search",
   "reset": "Reset",
   "features": {
+    "searchSelectedText": {
+      "title": "Search selected text",
+      "description": "Use the context menu to search selected text."
+    },
     "hideFeed": {
       "title": "Hide home timeline",
       "description": "Hide home timeline, center search view."

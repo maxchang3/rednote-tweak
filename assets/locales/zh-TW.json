@@ -4,6 +4,10 @@
   "title": "小紅搜",
   "reset": "重設設定",
   "features": {
+    "searchSelectedText": {
+      "title": "選取文字右鍵搜尋",
+      "description": "選取文字後可透過右鍵選單在小紅書中搜尋。"
+    },
     "hideFeed": {
       "title": "隱藏首頁資訊流",
       "description": "隱藏首頁資訊流，讓搜尋框頁面置中。"

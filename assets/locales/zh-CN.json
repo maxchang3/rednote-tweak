@@ -4,6 +4,10 @@
   "title": "小红搜",
   "reset": "重置配置",
   "features": {
+    "searchSelectedText": {
+      "title": "选中文本右键搜索",
+      "description": "选中文本后可通过右键菜单在小红书中搜索。"
+    },
     "hideFeed": {
       "title": "隐藏首页信息流",
       "description": "隐藏主页信息流，搜索框页面居中。"

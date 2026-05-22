@@ -9,7 +9,7 @@ export default defineConfig({
     name: '__MSG_extName__',
     description: '__MSG_extDescription__',
     default_locale: 'zh_CN',
-    permissions: ['storage'],
+    permissions: ['storage', 'contextMenus'],
     host_permissions: ['https://www.xiaohongshu.com/*'],
     browser_specific_settings: {
       gecko: {
