@@ -2,10 +2,9 @@
 
 ## [2.0.3](https://github.com/maxchang3/rednote-search/compare/v2.0.2...v2.0.3) (2026-05-23)
 
-
 ### Bug Fixes
 
-* remove unused content script ([1c29e5b](https://github.com/maxchang3/rednote-search/commit/1c29e5b251e19ca0e3781dd2ec0137ab2759543e))
+- remove unused content script ([1c29e5b](https://github.com/maxchang3/rednote-search/commit/1c29e5b251e19ca0e3781dd2ec0137ab2759543e))
 
 ## [2.0.2](https://github.com/maxchang3/rednote-search/compare/v2.0.1...v2.0.2) (2026-05-22)
 
