@@ -10,7 +10,7 @@ export default defineConfig({
     description: '__MSG_extDescription__',
     default_locale: 'zh_CN',
     permissions: ['storage', 'contextMenus', 'tabs'],
-    host_permissions: ['https://www.xiaohongshu.com/*'],
+    host_permissions: ['https://www.xiaohongshu.com/*', 'https://www.rednote.com/*'],
     browser_specific_settings: {
       gecko: {
         id: 'rednote-search@maxchang.me',
