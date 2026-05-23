@@ -20,6 +20,9 @@
   "[css]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "oxc.fmt.configPath": "./vite.config.ts",
   "editor.formatOnSave": true,
