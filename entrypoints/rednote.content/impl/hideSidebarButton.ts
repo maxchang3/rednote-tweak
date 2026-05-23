@@ -1,49 +1,23 @@
-import { defineFeature, toggleRootClass } from './utils'
+import { defineRootClassFeature } from './utils'
 
-const hideLivelistButton = defineFeature({
-  key: 'hideLivelistButton',
-  setup: async ({ onFeatureChange }) => {
-    await onFeatureChange((enabled) => {
-      toggleRootClass('RS_hide-sidebar-nav-livelist', enabled)
-    })
-  },
-})
+const hideLivelistButton = defineRootClassFeature(
+  'hideLivelistButton',
+  'RS_hide-sidebar-nav-livelist',
+)
 
-const hideAIChat = defineFeature({
-  key: 'hideAIChat',
-  setup: async ({ onFeatureChange }) => {
-    await onFeatureChange((enabled) => {
-      toggleRootClass('RS_hide-sidebar-nav-ai-chat', enabled)
-    })
-  },
-})
+const hideAIChat = defineRootClassFeature('hideAIChat', 'RS_hide-sidebar-nav-ai-chat')
 
-const hidePublishButton = defineFeature({
-  key: 'hidePublishButton',
-  setup: async ({ onFeatureChange }) => {
-    await onFeatureChange((enabled) => {
-      toggleRootClass('RS_hide-sidebar-nav-publish', enabled)
-    })
-  },
-})
+const hidePublishButton = defineRootClassFeature('hidePublishButton', 'RS_hide-sidebar-nav-publish')
 
-const hideNotificationButton = defineFeature({
-  key: 'hideNotificationButton',
-  setup: async ({ onFeatureChange }) => {
-    await onFeatureChange((enabled) => {
-      toggleRootClass('RS_hide-sidebar-nav-notification', enabled)
-    })
-  },
-})
+const hideNotificationButton = defineRootClassFeature(
+  'hideNotificationButton',
+  'RS_hide-sidebar-nav-notification',
+)
 
-export const hideNotificationBadge = defineFeature({
-  key: 'hideNotificationBadge',
-  setup: async ({ onFeatureChange }) => {
-    await onFeatureChange((enabled) => {
-      toggleRootClass('RS_hide-notification-badge', enabled)
-    })
-  },
-})
+export const hideNotificationBadge = defineRootClassFeature(
+  'hideNotificationBadge',
+  'RS_hide-notification-badge',
+)
 
 export const hideSidebarButton = [
   hideLivelistButton,
