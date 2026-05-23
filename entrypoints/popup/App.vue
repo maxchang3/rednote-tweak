@@ -16,7 +16,7 @@ const popupPages = {
 } as const
 
 const { t } = useI18n()
-const { actualLocale } = useLocale()
+const { resolvedLocale } = useLocale()
 
 const currentPage = shallowRef<PopupPage>('features')
 
@@ -37,7 +37,7 @@ const currentPageTitle = computed(() => t(currentPageConfig.value.titleKey))
 
 <template>
   <div>
-    <PopupHeader v-model="actualLocale" :title="currentPageTitle" @action="togglePage" />
+    <PopupHeader v-model="resolvedLocale" :title="currentPageTitle" @action="togglePage" />
 
     <component :is="currentPageComponent" />
   </div>

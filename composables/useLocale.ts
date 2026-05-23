@@ -2,11 +2,7 @@ export function useLocale() {
   const { state: storedLocale } = useStoredValue<string>(STORAGE_KEY_LOCALE, userLocale)
   const { t, locale } = useI18n()
 
-  if (storedLocale.value) {
-    locale.value = storedLocale.value as I18nLocales
-  }
-
-  const actualLocale = computed({
+  const resolvedLocale = computed({
     get: () => {
       return t('#currentLocale')
     },
@@ -17,6 +13,6 @@ export function useLocale() {
   })
 
   return {
-    actualLocale,
+    resolvedLocale,
   }
 }

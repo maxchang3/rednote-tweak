@@ -15,12 +15,6 @@ async function getLocale() {
 
 export const userLocale = await getLocale()
 
-export const LOCALE_NATIVE_NAMES: Record<I18nLocales, string> = {
-  en: 'English',
-  'zh-CN': '简体中文',
-  'zh-TW': '繁體中文',
-}
-
 export default createI18n<[I18nSchema], I18nLocales>({
   legacy: false,
   locale: userLocale,
