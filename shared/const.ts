@@ -1,5 +1,6 @@
 export const STORAGE_KEY_LOCALE = 'local:locale'
 export const STORAGE_KEY_FEATURE_PREFIX = 'local:feature:' as const
+export const STORAGE_KEY_SKIP_INTL_ALERT = 'local:skipIntlAlert'
 
 export const FEATURE_GROUPS = [
   {
@@ -9,6 +10,7 @@ export const FEATURE_GROUPS = [
       { id: 'hideFeed', default: true },
       { id: 'hideSearchSuggestions', default: true },
       { id: 'slashFocus', default: true },
+      { id: 'useIntlSearch', default: false },
     ],
   },
   {

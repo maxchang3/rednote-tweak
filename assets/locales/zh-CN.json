@@ -41,7 +41,17 @@
     },
     "hideNotificationBadge": {
       "title": "隐藏通知小红点"
+    },
+    "useIntlSearch": {
+      "title": "使用国际版搜索",
+      "description": "使用 rednote.com 进行搜索。"
     }
+  },
+  "intlSearchAlert": {
+    "title": "检测到国际版域名",
+    "description": "是否设置使用 rednote.com 进行搜索？",
+    "confirm": "确认",
+    "noRemind": "不再提示"
   },
   "groups": {
     "general": "通用",
