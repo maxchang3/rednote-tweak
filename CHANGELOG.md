@@ -3,6 +3,7 @@
 ## [2.1.0](https://github.com/maxchang3/rednote-search/compare/v2.0.3...v2.1.0) (2026-05-25)
 
 
+
 ### Features
 
 * add international search support and alert ([4c23dba](https://github.com/maxchang3/rednote-search/commit/4c23dba426a5a81970a36281cbd66bf1369d8383))
