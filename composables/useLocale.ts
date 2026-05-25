@@ -1,5 +1,5 @@
 export function useLocale() {
-  const { state: storedLocale } = useStoredValue<string>(STORAGE_KEY_LOCALE, userLocale)
+  const [storedLocale] = useStoredValue<string>(STORAGE_KEY_LOCALE, userLocale)
   const { t, locale } = useI18n()
 
   if (storedLocale.value) {

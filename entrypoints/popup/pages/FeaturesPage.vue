@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { t } = useI18n()
-const { featureStateMap, isReady } = useFeatureStateMap()
+const { featureMap, isReady } = useFeatureMap()
 </script>
 
 <template>
@@ -27,7 +27,7 @@ const { featureStateMap, isReady } = useFeatureStateMap()
           :description="
             group.groupId === 'sidebar' ? undefined : t(`features.${feature.id}.description`)
           "
-          v-model="featureStateMap[feature.id].value"
+          v-model="featureMap[feature.id].value"
         />
       </div>
     </section>

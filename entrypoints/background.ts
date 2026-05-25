@@ -1,7 +1,5 @@
 const MENU_ID = 'search-on-xiaohongshu'
 const FEATURE_KEY: FeatureKey = 'searchSelectedText'
-const FEATURE_STORAGE_KEY = getFeatureStorageKey(FEATURE_KEY)
-const INTL_SEARCH_KEY = getFeatureStorageKey('useIntlSearch')
 
 async function removeMenuIfExists() {
   try {
@@ -27,8 +25,7 @@ async function syncMenuEnabled(enabled: boolean) {
 
 export default defineBackground(() => {
   const syncFromStorage = async () => {
-    const enabled =
-      (await storage.getItem<boolean>(FEATURE_STORAGE_KEY)) ?? FEATURE_DEFAULTS[FEATURE_KEY]
+    const enabled = await getFeatureValue(FEATURE_KEY)
     await syncMenuEnabled(enabled)
   }
 
@@ -36,8 +33,7 @@ export default defineBackground(() => {
     void syncFromStorage()
   })
 
-  storage.watch<boolean>(FEATURE_STORAGE_KEY, (nextValue) => {
-    const enabled = nextValue ?? FEATURE_DEFAULTS[FEATURE_KEY]
+  watchFeatureValue(FEATURE_KEY, (enabled) => {
     void syncMenuEnabled(enabled)
   })
 
@@ -46,8 +42,7 @@ export default defineBackground(() => {
       return
     }
 
-    const useIntl =
-      (await storage.getItem<boolean>(INTL_SEARCH_KEY)) ?? FEATURE_DEFAULTS['useIntlSearch']
+    const useIntl = await getFeatureValue('useIntlSearch')
 
     await browser.tabs.create({
       url: buildSearchURL(info.selectionText.trim(), useIntl),
