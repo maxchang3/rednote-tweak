@@ -2,14 +2,14 @@ const MAIN_DOMAIN = 'www.xiaohongshu.com'
 const INTL_DOMAIN = 'www.rednote.com'
 const ALLOWED_DOMAINS = <const>[MAIN_DOMAIN, INTL_DOMAIN]
 
-export function buildSearchURL(keyword: string, useIntl = false) {
+export const buildSearchURL = (keyword: string, useIntl = false) => {
   const params = new URLSearchParams({ keyword })
   const domain = useIntl ? INTL_DOMAIN : MAIN_DOMAIN
 
   return `https://${domain}/search_result?${params.toString()}`
 }
 
-export function isIntlDomain(url?: string) {
+export const isIntlDomain = (url?: string) => {
   try {
     if (!url) return false
     const { hostname } = new URL(url)
@@ -19,7 +19,7 @@ export function isIntlDomain(url?: string) {
   }
 }
 
-export function isAllowedURL(url?: string) {
+export const isAllowedURL = (url?: string) => {
   if (!url) return false
   try {
     const { hostname } = new URL(url)

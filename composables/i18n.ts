@@ -6,7 +6,7 @@ import type schema from '~/assets/locales/en.json'
 export type I18nSchema = typeof schema
 export type I18nLocales = 'en' | 'zh-CN' | 'zh-TW'
 
-async function getLocale() {
+const getLocale = async () => {
   const stored = await storage.getItem<unknown>(STORAGE_KEY_LOCALE)
   if (stored && typeof stored === 'string') return stored
   const browserLang = browser.i18n.getUILanguage()

@@ -1,10 +1,10 @@
-export function useFeature(key: FeatureKey) {
+export const useFeature = (key: FeatureKey) => {
   const storageKey = getFeatureStorageKey(key)
   const [state, rest] = useStoredValue<boolean>(storageKey, FEATURE_DEFAULTS[key])
   return [state, rest] as const
 }
 
-export function useFeatureMap() {
+export const useFeatureMap = () => {
   const featureMap = {} as Record<FeatureKey, Ref<boolean>>
   const readyList: Ref<boolean>[] = []
   for (const key of FEATURE_KEYS) {

@@ -28,7 +28,7 @@ onMounted(async () => {
   currentPage.value = !isAllowedURL(activeTab.url) ? 'search' : 'features'
 })
 
-function togglePage() {
+const togglePage = () => {
   currentPage.value = currentPage.value === 'features' ? 'search' : 'features'
 }
 

@@ -8,5 +8,10 @@ export default defineConfig({
     semi: false,
     singleQuote: true,
   },
-  lint: { options: { typeAware: true, typeCheck: true } },
+  lint: {
+    options: { typeAware: true, typeCheck: true },
+    rules: {
+      'eslint/func-style': ['error', 'expression'],
+    },
+  },
 })

@@ -20,13 +20,13 @@ watch(
   { immediate: true },
 )
 
-function handleConfirm() {
+const handleConfirm = () => {
   useIntlSearch.value = true
   skipIntlAlert.value = true
   open.value = false
 }
 
-function handleSkip() {
+const handleSkip = () => {
   skipIntlAlert.value = true
   open.value = false
 }

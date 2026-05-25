@@ -1,7 +1,7 @@
 const MENU_ID = 'search-on-xiaohongshu'
 const FEATURE_KEY: FeatureKey = 'searchSelectedText'
 
-async function removeMenuIfExists() {
+const removeMenuIfExists = async () => {
   try {
     await browser.contextMenus.remove(MENU_ID)
   } catch {
@@ -9,7 +9,7 @@ async function removeMenuIfExists() {
   }
 }
 
-async function syncMenuEnabled(enabled: boolean) {
+const syncMenuEnabled = async (enabled: boolean) => {
   await removeMenuIfExists()
 
   if (!enabled) return

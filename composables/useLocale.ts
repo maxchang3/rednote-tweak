@@ -1,4 +1,4 @@
-export function useLocale() {
+export const useLocale = () => {
   const [storedLocale] = useStoredValue<string>(STORAGE_KEY_LOCALE, userLocale)
   const { t, locale } = useI18n()
 
