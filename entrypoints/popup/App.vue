@@ -20,11 +20,7 @@ const { resolvedLocale } = useLocale()
 
 const currentPage = shallowRef<PopupPage>('features')
 
-const useIntlSearchKey = getFeatureStorageKey('useIntlSearch')
-const { state: useIntlSearch } = useStoredValue<boolean>(
-  useIntlSearchKey,
-  FEATURE_DEFAULTS['useIntlSearch'],
-)
+const [useIntlSearch] = useFeature('useIntlSearch')
 const { state: skipIntlAlert } = useStoredValue<boolean>(STORAGE_KEY_SKIP_INTL_ALERT, false)
 
 const showIntlAlert = ref(false)

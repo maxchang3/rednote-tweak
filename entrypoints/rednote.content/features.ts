@@ -1,5 +1,4 @@
 import type { ContentScriptContext } from 'wxt/utils/content-script-context'
-import { storage } from 'wxt/utils/storage'
 import { initRouter, onRouteChange } from './router'
 import {
   hideFeed,
@@ -51,16 +50,8 @@ const createFeatureContext = (ctx: ContentScriptContext, key: FeatureKey): Featu
       disposers.push(cleanup)
     },
     onFeatureChange: async (onChange) => {
-      const storageKey = getFeatureStorageKey(key)
-      const defaultEnabled = FEATURE_DEFAULTS[key]
-
-      onChange((await storage.getItem<boolean>(storageKey)) ?? defaultEnabled)
-
-      const unwatch = storage.watch<boolean>(storageKey, (nextValue) => {
-        onChange(nextValue ?? defaultEnabled)
-      })
-
-      disposers.push(unwatch)
+      onChange(await getFeatureValue(key))
+      disposers.push(watchFeatureValue(key, onChange))
     },
   }
 }
