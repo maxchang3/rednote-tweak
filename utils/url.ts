@@ -9,16 +9,18 @@ export function buildSearchURL(keyword: string, useIntl = false) {
   return `https://${domain}/search_result?${params.toString()}`
 }
 
-export function isIntlDomain(url: string | null | undefined) {
+export function isIntlDomain(url?: string) {
   try {
-    const { hostname } = new URL(url ?? '')
+    if (!url) return false
+    const { hostname } = new URL(url)
     return hostname === INTL_DOMAIN
   } catch {
     return false
   }
 }
 
-export function isAllowedURL(url: string) {
+export function isAllowedURL(url?: string) {
+  if (!url) return false
   try {
     const { hostname } = new URL(url)
 

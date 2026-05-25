@@ -19,32 +19,14 @@ const { t } = useI18n()
 const { resolvedLocale } = useLocale()
 
 const currentPage = shallowRef<PopupPage>('features')
-
-const [useIntlSearch] = useFeature('useIntlSearch')
-const { state: skipIntlAlert } = useStoredValue<boolean>(STORAGE_KEY_SKIP_INTL_ALERT, false)
-
-const showIntlAlert = ref(false)
+const activeTabUrl = ref<string>()
 
 onMounted(async () => {
   const [activeTab] = await browser.tabs.query({ active: true, currentWindow: true })
 
-  currentPage.value = activeTab?.url && !isAllowedURL(activeTab.url) ? 'search' : 'features'
-
-  if (isIntlDomain(activeTab?.url) && !skipIntlAlert.value) {
-    showIntlAlert.value = true
-  }
+  activeTabUrl.value = activeTab.url
+  currentPage.value = !isAllowedURL(activeTab.url) ? 'search' : 'features'
 })
-
-function handleIntlConfirm() {
-  useIntlSearch.value = true
-  skipIntlAlert.value = true
-  showIntlAlert.value = false
-}
-
-function handleIntlSkip() {
-  skipIntlAlert.value = true
-  showIntlAlert.value = false
-}
 
 function togglePage() {
   currentPage.value = currentPage.value === 'features' ? 'search' : 'features'
@@ -59,11 +41,7 @@ const currentPageTitle = computed(() => t(currentPageConfig.value.titleKey))
   <div>
     <PopupHeader v-model="resolvedLocale" :title="currentPageTitle" @action="togglePage" />
 
-    <IntlSearchAlert
-      v-model:open="showIntlAlert"
-      @confirm="handleIntlConfirm"
-      @skip="handleIntlSkip"
-    />
+    <IntlSearchAlert :url="activeTabUrl" />
 
     <component :is="currentPageComponent" />
   </div>

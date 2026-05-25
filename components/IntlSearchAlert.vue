@@ -1,12 +1,35 @@
 <script lang="ts" setup>
-const open = defineModel<boolean>('open', { required: true })
-
-const emit = defineEmits<{
-  confirm: []
-  skip: []
+const props = defineProps<{
+  url?: string
 }>()
 
+const open = ref(false)
+
+const [useIntlSearch] = useFeature('useIntlSearch')
+const [skipIntlAlert] = useStoredValue<boolean>(STORAGE_KEY_SKIP_INTL_ALERT, false)
+
 const { t } = useI18n()
+
+watch(
+  () => props.url,
+  (url) => {
+    if (isIntlDomain(url) && !skipIntlAlert.value) {
+      open.value = true
+    }
+  },
+  { immediate: true },
+)
+
+function handleConfirm() {
+  useIntlSearch.value = true
+  skipIntlAlert.value = true
+  open.value = false
+}
+
+function handleSkip() {
+  skipIntlAlert.value = true
+  open.value = false
+}
 </script>
 
 <template>
@@ -19,10 +42,10 @@ const { t } = useI18n()
         </AlertDialogDescription>
       </AlertDialogHeader>
       <AlertDialogFooter>
-        <AlertDialogCancel @click="emit('skip')">
+        <AlertDialogCancel @click="handleSkip">
           {{ t('intlSearchAlert.noRemind') }}
         </AlertDialogCancel>
-        <AlertDialogAction @click="emit('confirm')">
+        <AlertDialogAction @click="handleConfirm">
           {{ t('intlSearchAlert.confirm') }}
         </AlertDialogAction>
       </AlertDialogFooter>
