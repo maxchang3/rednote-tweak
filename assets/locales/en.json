@@ -41,7 +41,17 @@
     },
     "hideNotificationBadge": {
       "title": "Hide notif badge"
+    },
+    "useIntlSearch": {
+      "title": "Use international search",
+      "description": "Use rednote.com for search."
     }
+  },
+  "intlSearchAlert": {
+    "title": "International domain detected",
+    "description": "Switch to rednote.com for search?",
+    "confirm": "Yes",
+    "noRemind": "Don't ask again"
   },
   "groups": {
     "general": "General",

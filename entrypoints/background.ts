@@ -1,6 +1,7 @@
 const MENU_ID = 'search-on-xiaohongshu'
 const FEATURE_KEY: FeatureKey = 'searchSelectedText'
 const FEATURE_STORAGE_KEY = getFeatureStorageKey(FEATURE_KEY)
+const INTL_SEARCH_KEY = getFeatureStorageKey('useIntlSearch')
 
 async function removeMenuIfExists() {
   try {
@@ -45,8 +46,11 @@ export default defineBackground(() => {
       return
     }
 
+    const useIntl =
+      (await storage.getItem<boolean>(INTL_SEARCH_KEY)) ?? FEATURE_DEFAULTS['useIntlSearch']
+
     await browser.tabs.create({
-      url: buildXiaohongshuSearchUrl(info.selectionText.trim()),
+      url: buildSearchURL(info.selectionText.trim(), useIntl),
     })
   })
 })

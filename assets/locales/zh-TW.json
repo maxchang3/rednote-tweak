@@ -41,7 +41,17 @@
     },
     "hideNotificationBadge": {
       "title": "隱藏通知小紅點"
+    },
+    "useIntlSearch": {
+      "title": "使用國際版搜尋",
+      "description": "使用 rednote.com 進行搜尋。"
     }
+  },
+  "intlSearchAlert": {
+    "title": "偵測到國際版網域",
+    "description": "是否設定使用 rednote.com 進行搜尋？",
+    "confirm": "確認",
+    "noRemind": "不再提示"
   },
   "groups": {
     "general": "一般",

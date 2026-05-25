@@ -4,13 +4,19 @@ import { SearchIcon } from 'lucide-vue-next'
 const keyword = shallowRef('')
 const searchInputRef = useTemplateRef<{ focus: () => void }>('searchInput')
 
+const useIntlSearchKey = getFeatureStorageKey('useIntlSearch')
+const { state: useIntlSearch } = useStoredValue<boolean>(
+  useIntlSearchKey,
+  FEATURE_DEFAULTS['useIntlSearch'],
+)
+
 const submitSearch = async () => {
   const nextKeyword = keyword.value.trim()
 
   if (!nextKeyword) return
 
   await browser.tabs.create({
-    url: buildXiaohongshuSearchUrl(nextKeyword),
+    url: buildSearchURL(nextKeyword, useIntlSearch.value ?? false),
   })
 }
 

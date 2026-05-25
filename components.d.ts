@@ -11,9 +11,22 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Alert: typeof import('./components/ui/alert/Alert.vue')['default']
+    AlertDescription: typeof import('./components/ui/alert/AlertDescription.vue')['default']
+    AlertDialog: typeof import('./components/ui/alert-dialog/AlertDialog.vue')['default']
+    AlertDialogAction: typeof import('./components/ui/alert-dialog/AlertDialogAction.vue')['default']
+    AlertDialogCancel: typeof import('./components/ui/alert-dialog/AlertDialogCancel.vue')['default']
+    AlertDialogContent: typeof import('./components/ui/alert-dialog/AlertDialogContent.vue')['default']
+    AlertDialogDescription: typeof import('./components/ui/alert-dialog/AlertDialogDescription.vue')['default']
+    AlertDialogFooter: typeof import('./components/ui/alert-dialog/AlertDialogFooter.vue')['default']
+    AlertDialogHeader: typeof import('./components/ui/alert-dialog/AlertDialogHeader.vue')['default']
+    AlertDialogTitle: typeof import('./components/ui/alert-dialog/AlertDialogTitle.vue')['default']
+    AlertDialogTrigger: typeof import('./components/ui/alert-dialog/AlertDialogTrigger.vue')['default']
+    AlertTitle: typeof import('./components/ui/alert/AlertTitle.vue')['default']
     Button: typeof import('./components/ui/button/Button.vue')['default']
     FeatureItem: typeof import('./components/FeatureItem.vue')['default']
     Input: typeof import('./components/ui/input/Input.vue')['default']
+    IntlSearchAlert: typeof import('./components/IntlSearchAlert.vue')['default']
     Label: typeof import('./components/ui/label/Label.vue')['default']
     LocaleSelect: typeof import('./components/LocaleSelect.vue')['default']
     NativeSelect: typeof import('./components/ui/native-select/NativeSelect.vue')['default']
