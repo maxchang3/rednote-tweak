@@ -1,5 +1,5 @@
 const MENU_ID = 'search-on-xiaohongshu'
-const FEATURE_KEY: FeatureKey = 'searchSelectedText'
+const FEATURE_KEY: FeatureKey = 'contextMenuSearch'
 
 const removeMenuIfExists = async () => {
   try {
@@ -14,7 +14,7 @@ const syncMenuEnabled = async (enabled: boolean) => {
 
   if (!enabled) return
 
-  const title = browser.i18n.getMessage('searchSelectedTextMenuTitle')
+  const title = browser.i18n.getMessage('searchMenuTitle')
 
   browser.contextMenus.create({
     id: MENU_ID,

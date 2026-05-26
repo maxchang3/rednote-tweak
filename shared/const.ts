@@ -6,11 +6,16 @@ export const FEATURE_GROUPS = [
   {
     groupId: 'general',
     features: [
-      { id: 'searchSelectedText', default: true },
-      { id: 'hideFeed', default: true },
-      { id: 'hideSearchSuggestions', default: true },
+      { id: 'contextMenuSearch', default: true },
       { id: 'slashFocus', default: true },
       { id: 'useIntlSearch', default: false },
+    ],
+  },
+  {
+    groupId: 'explore',
+    features: [
+      { id: 'hideFeed', default: true },
+      { id: 'hideSearchSuggestions', default: true },
     ],
   },
   {

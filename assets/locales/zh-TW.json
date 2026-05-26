@@ -11,8 +11,8 @@
     "placeholder": "在小紅書中搜尋"
   },
   "features": {
-    "searchSelectedText": {
-      "title": "選取文字右鍵搜尋",
+    "contextMenuSearch": {
+      "title": "右鍵選單搜尋",
       "description": "選取文字後可透過右鍵選單在小紅書中搜尋。"
     },
     "hideFeed": {
@@ -55,6 +55,7 @@
   },
   "groups": {
     "general": "一般",
+    "explore": "發現",
     "sidebar": "側邊欄"
   }
 }
