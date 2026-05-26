@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { SearchIcon } from 'lucide-vue-next'
+import laptop from '~/assets/laptop.svg'
 
 const keyword = shallowRef('')
 const searchInputRef = useTemplateRef<{ focus: () => void }>('searchInput')
@@ -44,4 +45,7 @@ onMounted(() => {
       </Button>
     </form>
   </section>
+  <header class="pt-4 flex justify-center">
+    <img :src="laptop" class="w-20 pointer-events-none select-none" />
+  </header>
 </template>
