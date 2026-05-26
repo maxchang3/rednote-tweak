@@ -10,6 +10,7 @@
 Enhance the RedNote(Xiaohongshu) web experience.
 
 Key features:
+<img width="15%" align="right" src="https://github.com/user-attachments/assets/231de877-807f-4ea9-8b96-290003c0a670" />
 
 **Search Enhancements**:
 
