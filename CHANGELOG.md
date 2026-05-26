@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.2.0](https://github.com/maxchang3/rednote-search/compare/v2.1.0...v2.2.0) (2026-05-26)
+
+
+### Features
+
+* add kawaii character on the search page ([682486a](https://github.com/maxchang3/rednote-search/commit/682486afa73b12b7eacb95d8fe404128df06e83b))
+* **feature/sidebar:** add hideRedVideo feature ([da1b518](https://github.com/maxchang3/rednote-search/commit/da1b5181e99b9f58f45de97a3db62aadd620a799))
+* rename extension to 小红 (Rednote Tweak) ([42265e6](https://github.com/maxchang3/rednote-search/commit/42265e6eafbac1db95cf4aef228d22a1f1b47399))
+
 ## [2.1.0](https://github.com/maxchang3/rednote-tweak/compare/v2.0.3...v2.1.0) (2026-05-25)
 
 ### Features
