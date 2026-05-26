@@ -15,17 +15,15 @@
       "title": "右鍵選單搜尋",
       "description": "選取文字後可透過右鍵選單在小紅書中搜尋。"
     },
-    "hideFeed": {
-      "title": "隱藏首頁資訊流",
-      "description": "隱藏首頁資訊流，讓搜尋框頁面置中。"
-    },
-    "hideSearchSuggestions": {
-      "title": "隱藏「猜你想搜」",
-      "description": "隱藏搜尋框下方的「猜你想搜」提示。"
-    },
     "slashFocus": {
       "title": "斜線聚焦搜尋",
       "description": "按下 / 時，自動聚焦到搜尋框。"
+    },
+    "hideFeed": {
+      "title": "隱藏首頁資訊流"
+    },
+    "hideSearchSuggestions": {
+      "title": "隱藏猜你想搜"
     },
     "hideLivelistButton": {
       "title": "隱藏直播"

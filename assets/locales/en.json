@@ -13,19 +13,17 @@
   "features": {
     "contextMenuSearch": {
       "title": "Context menu search",
-      "description": "Search selected text via the right-click context menu."
-    },
-    "hideFeed": {
-      "title": "Hide home timeline",
-      "description": "Hide home timeline, center search view."
-    },
-    "hideSearchSuggestions": {
-      "title": "Hide suggested searches",
-      "description": "Hide the suggested searches."
+      "description": "Search selected text via the right-click menu."
     },
     "slashFocus": {
       "title": "Focus search with slash",
       "description": "Press / to focus the search box automatically."
+    },
+    "hideFeed": {
+      "title": "Hide timeline"
+    },
+    "hideSearchSuggestions": {
+      "title": "Hide suggestions"
     },
     "hideLivelistButton": {
       "title": "Hide Livelist"
@@ -43,7 +41,7 @@
       "title": "Hide notif badge"
     },
     "hideRedVideo": {
-      "title": "Hide RED Video"
+      "title": "Hide RED"
     },
     "useIntlSearch": {
       "title": "Use international search",

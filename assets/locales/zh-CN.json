@@ -15,17 +15,15 @@
       "title": "右键菜单搜索",
       "description": "选中文本后可通过右键菜单在小红书中搜索。"
     },
-    "hideFeed": {
-      "title": "隐藏信息流",
-      "description": "隐藏主页信息流，搜索框页面居中。"
-    },
-    "hideSearchSuggestions": {
-      "title": "隐藏猜你想搜",
-      "description": "隐藏搜索框下方的「猜你想搜」提示。"
-    },
     "slashFocus": {
       "title": "斜杠聚焦搜索",
       "description": "按下 / 时，自动聚焦到搜索框。"
+    },
+    "hideFeed": {
+      "title": "隐藏信息流"
+    },
+    "hideSearchSuggestions": {
+      "title": "隐藏猜你想搜"
     },
     "hideLivelistButton": {
       "title": "隐藏直播"
