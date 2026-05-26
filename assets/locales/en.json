@@ -11,9 +11,9 @@
     "placeholder": "Search on Rednote"
   },
   "features": {
-    "searchSelectedText": {
-      "title": "Search selected text",
-      "description": "Use the context menu to search selected text."
+    "contextMenuSearch": {
+      "title": "Context menu search",
+      "description": "Search selected text via the right-click context menu."
     },
     "hideFeed": {
       "title": "Hide home timeline",
@@ -55,6 +55,7 @@
   },
   "groups": {
     "general": "General",
+    "explore": "Explore",
     "sidebar": "Sidebar"
   }
 }

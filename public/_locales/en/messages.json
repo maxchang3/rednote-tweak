@@ -5,7 +5,7 @@
   "extDescription": {
     "message": "Enhance the RedNote(Xiaohongshu) web experience. — hide feed noise, remove notifications, one-click search, and more."
   },
-  "searchSelectedTextMenuTitle": {
+  "searchMenuTitle": {
     "message": "Search RedNote: \"%s\""
   }
 }

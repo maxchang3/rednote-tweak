@@ -5,7 +5,7 @@
   "extDescription": {
     "message": "增强小红书网页版的一些功能。隐藏首页信息流干扰，去除通知提示，一键搜索，以及更多。"
   },
-  "searchSelectedTextMenuTitle": {
+  "searchMenuTitle": {
     "message": "在小紅書中搜尋: \"%s\""
   }
 }

@@ -16,7 +16,7 @@ const { featureMap, isReady } = useFeatureMap()
 
       <div
         :class="
-          group.groupId === 'sidebar' ? 'grid grid-cols-2 gap-2 pb-2' : 'flex flex-col gap-1 pb-2'
+          group.groupId === 'general' ? 'flex flex-col gap-1 pb-2' : 'grid grid-cols-2 gap-2 pb-2'
         "
       >
         <FeatureItem
@@ -25,7 +25,7 @@ const { featureMap, isReady } = useFeatureMap()
           :feature-key="feature.id"
           :title="t(`features.${feature.id}.title`)"
           :description="
-            group.groupId === 'sidebar' ? undefined : t(`features.${feature.id}.description`)
+            group.groupId === 'general' ? t(`features.${feature.id}.description`) : undefined
           "
           v-model="featureMap[feature.id].value"
         />

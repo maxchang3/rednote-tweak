@@ -11,16 +11,16 @@
     "placeholder": "在小红书中搜索"
   },
   "features": {
-    "searchSelectedText": {
-      "title": "选中文本右键搜索",
+    "contextMenuSearch": {
+      "title": "右键菜单搜索",
       "description": "选中文本后可通过右键菜单在小红书中搜索。"
     },
     "hideFeed": {
-      "title": "隐藏首页信息流",
+      "title": "隐藏信息流",
       "description": "隐藏主页信息流，搜索框页面居中。"
     },
     "hideSearchSuggestions": {
-      "title": "隐藏「猜你想搜」",
+      "title": "隐藏猜你想搜",
       "description": "隐藏搜索框下方的「猜你想搜」提示。"
     },
     "slashFocus": {
@@ -55,6 +55,7 @@
   },
   "groups": {
     "general": "通用",
+    "explore": "发现",
     "sidebar": "侧边栏"
   }
 }
