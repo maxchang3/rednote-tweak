@@ -10,6 +10,7 @@
 增强小红书网页版的一些功能。
 
 目前的主要功能有：
+<img width="15%" align="right" src="https://github.com/user-attachments/assets/231de877-807f-4ea9-8b96-290003c0a670" />
 
 **搜索增强**：
 
