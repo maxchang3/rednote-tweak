@@ -19,10 +19,13 @@ export const hideNotificationBadge = defineRootClassFeature(
   'RS_hide-notification-badge',
 )
 
+const hideRedVideo = defineRootClassFeature('hideRedVideo', 'RS_hide-sidebar-nav-red-video')
+
 export const hideSidebarButton = [
   hideLivelistButton,
   hideAIChat,
   hidePublishButton,
   hideNotificationButton,
   hideNotificationBadge,
+  hideRedVideo,
 ] as const

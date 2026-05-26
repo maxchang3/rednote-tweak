@@ -42,6 +42,9 @@
     "hideNotificationBadge": {
       "title": "隐藏通知小红点"
     },
+    "hideRedVideo": {
+      "title": "隐藏 RED 视频"
+    },
     "useIntlSearch": {
       "title": "使用国际版搜索",
       "description": "使用 rednote.com 进行搜索。"
