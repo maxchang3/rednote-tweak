@@ -1,6 +1,6 @@
 # Project Overview
 
-[**小红搜 — RedNote Search**](https://github.com/maxchang3/rednote-search) is a cross-browser extension (Chrome, Firefox, Edge) that turns [Xiaohongshu (小红书)](https://www.xiaohongshu.com) into a search-first experience. It hides distracting feeds, sidebar navigation, and search suggestions — all configurable from the popup. Built with **WXT** on top of Vite.
+[**小红 — RedNote Tweak**](https://github.com/maxchang3/rednote-tweak) is a cross-browser extension (Chrome, Firefox, Edge) that turns [Xiaohongshu (小红书)](https://www.xiaohongshu.com) into a search-first experience. It hides distracting feeds, sidebar navigation, and search suggestions — all configurable from the popup. Built with **WXT** on top of Vite.
 
 ## Tech Stack
 
