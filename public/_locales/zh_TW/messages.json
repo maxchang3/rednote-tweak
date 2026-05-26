@@ -1,11 +1,11 @@
 {
   "extName": {
-    "message": "小紅搜"
+    "message": "小紅 RedNote Tweak"
   },
   "extDescription": {
-    "message": "讓小紅書更像一個專注搜尋的工具，隱藏首頁資訊流干擾，去除通知提示，一鍵聚焦搜尋，以及更多。"
+    "message": "增强小红书网页版的一些功能。隐藏首页信息流干扰，去除通知提示，一键搜索，以及更多。"
   },
   "searchSelectedTextMenuTitle": {
-    "message": "小紅搜: \"%s\""
+    "message": "在小紅書中搜尋: \"%s\""
   }
 }

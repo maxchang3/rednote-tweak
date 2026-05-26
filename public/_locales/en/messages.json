@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "RedNote Search"
+    "message": "小红 RedNote Tweak"
   },
   "extDescription": {
-    "message": "Turn RedNote into a search-first experience — hide feed noise, remove notifications, focus search instantly, and more."
+    "message": "Enhance the RedNote(Xiaohongshu) web experience. — hide feed noise, remove notifications, one-click search, and more."
   },
   "searchSelectedTextMenuTitle": {
     "message": "Search RedNote: \"%s\""

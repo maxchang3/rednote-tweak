@@ -1,4 +1,4 @@
-# 小红搜 - RedNote Search
+# 小红 - RedNote Tweak
 
 [English](./README.en.md)
 
@@ -7,7 +7,7 @@
   <img width="23%"  src="https://github.com/user-attachments/assets/e7dd8ac2-403a-49fd-bea1-c73cf2567eb5" />
 </p>
 
-增强小红书网页版的一些功能，将其改造成搜索工具。
+增强小红书网页版的一些功能。
 
 目前的主要功能有：
 
@@ -27,12 +27,12 @@
 
 ## 安装
 
-小红搜支持主流的 Chromium 和 Firefox 浏览器，可以通过以下途径安装：
+小红支持主流的 Chromium 和 Firefox 浏览器，可以通过以下途径安装：
 
 - [Chrome Web Store](https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf)
-- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/rednote-search/)
-- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/rednote-search/galfaogioipafnkphghioiimlmbkklld)
-- [GitHub Releases](https://github.com/maxchang3/rednote-search/releases)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld)
+- [GitHub Releases](https://github.com/maxchang3/rednote-tweak/releases)
 
 如果你需要更轻量的版本，可以安装用户脚本版本：[Readnote-as-a-Search-Engine-JS](https://github.com/maxchang3/userscripts/tree/main/Readnote-as-a-Search-Engine-JS)。
 
