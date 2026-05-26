@@ -29,7 +29,7 @@ All features can be toggled independently in the popup settings.
 
 - [Chrome Web Store](https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf)
 - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/)
-- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/rednote-tweak/galfaogioipafnkphghioiimlmbkklld)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld)
 - [GitHub Releases](https://github.com/maxchang3/rednote-tweak/releases)
 
 If you prefer a lightweight version, you can install the userscript version: [Readnote-as-a-Search-Engine-JS](https://github.com/maxchang3/userscripts/tree/main/Readnote-as-a-Search-Engine-JS).
