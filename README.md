@@ -3,8 +3,8 @@
 [English](./README.en.md)
 
 <p align="center">
-  <img width="50%"  src="https://github.com/user-attachments/assets/c476b57d-bf01-4ffb-8148-a0c21d6dba00" />
-  <img width="23%"  src="https://github.com/user-attachments/assets/e7dd8ac2-403a-49fd-bea1-c73cf2567eb5" />
+  <img width="50%"  src="https://github.com/user-attachments/assets/8a90a147-4533-4246-bec7-89d5091b8419" />
+  <img width="23%"  src="https://github.com/user-attachments/assets/e1c195c0-093d-4c76-b256-f7e4eac63402" />
 </p>
 
 增强小红书网页版的一些功能。
