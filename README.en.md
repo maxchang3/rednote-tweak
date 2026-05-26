@@ -3,8 +3,8 @@
 [简体中文](./README.md)
 
 <p align="center">
-  <img width="50%"  src="https://github.com/user-attachments/assets/b943c31f-ca24-4f2f-b907-4958391622b8" />
-  <img width="23%"  src="https://github.com/user-attachments/assets/3daf5643-14a0-455d-8531-b1277f3aae51" />
+  <img width="50%"  src="https://github.com/user-attachments/assets/3caf37a4-21a6-44f0-9ca5-bb434a4f3fb8" />
+  <img width="23%"  src="https://github.com/user-attachments/assets/7d3e8f73-b6f4-4135-a723-20b6105bb5cf" />
 </p>
 
 Enhance the RedNote(Xiaohongshu) web experience.
