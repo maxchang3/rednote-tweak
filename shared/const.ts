@@ -6,8 +6,8 @@ export const FEATURE_GROUPS = [
   {
     groupId: 'general',
     features: [
-      { id: 'contextMenuSearch', default: true },
       { id: 'slashFocus', default: true },
+      { id: 'contextMenuSearch', default: true },
       { id: 'useIntlSearch', default: false },
     ],
   },
