@@ -23,6 +23,7 @@ export const FEATURE_GROUPS = [
     features: [
       { id: 'hideLivelistButton', default: true },
       { id: 'hideAIChat', default: false },
+      { id: 'hideRedVideo', default: true },
       { id: 'hidePublishButton', default: false },
       { id: 'hideNotificationButton', default: false },
       { id: 'hideNotificationBadge', default: false },

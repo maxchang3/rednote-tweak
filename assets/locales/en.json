@@ -42,6 +42,9 @@
     "hideNotificationBadge": {
       "title": "Hide notif badge"
     },
+    "hideRedVideo": {
+      "title": "Hide RED Video"
+    },
     "useIntlSearch": {
       "title": "Use international search",
       "description": "Use rednote.com for search."
