@@ -1,4 +1,4 @@
-# 小红 - RedNote Tweak
+# 小红 RedNote Tweak
 
 [简体中文](./README.md)
 
