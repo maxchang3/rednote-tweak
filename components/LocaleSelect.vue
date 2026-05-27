@@ -5,7 +5,7 @@ const modelValue = defineModel<string>()
 </script>
 
 <template>
-  <div class="flex shrink-0 items-center gap-1 text-gray-500">
+  <div class="flex shrink-0 items-center gap-1 text-muted-foreground">
     <LanguagesIcon class="size-3 shrink-0" aria-hidden="true" />
 
     <NativeSelect id="locale-select" v-model="modelValue" class="b-none text-sm p-1 cursor-pointer">

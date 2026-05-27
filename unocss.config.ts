@@ -11,8 +11,6 @@ export default defineConfig({
     presetShadcn(
       {
         color: 'red',
-        // With default setting for SolidUI, you need to set the darkSelector option.
-        darkSelector: '[data-kb-theme="dark"]',
       },
       {
         // If you are using reka ui.
@@ -23,7 +21,7 @@ export default defineConfig({
   // Project shortcuts for repeated utility groups
   shortcuts: {
     'item-card':
-      'flex items-center justify-between gap-3 border border-border rounded-xl bg-muted/30 px-3 py-2.5',
+      'flex items-center justify-between gap-3 border rounded-xl bg-muted/50 px-3 py-2.5',
   },
   // By default, `.ts` and `.js` files are NOT extracted.
   // If you want to extract them, use the following configuration.
