@@ -1,6 +1,6 @@
 # Project Overview
 
-[**小红 — RedNote Tweak**](https://github.com/maxchang3/rednote-tweak) is a cross-browser extension (Chrome, Firefox, Edge) that turns [Xiaohongshu (小红书)](https://www.xiaohongshu.com) into a search-first experience. It hides distracting feeds, sidebar navigation, and search suggestions — all configurable from the popup. Built with **WXT** on top of Vite.
+[**小红 — RedNote Tweak**](https://github.com/maxchang3/rednote-tweak)is a cross-browser extension (Chrome, Firefox, Edge) that enhances the [Xiaohongshu (小红书)](https://www.xiaohongshu.com) web experience with search improvements and UI cleanup. Features include keyboard shortcuts for search, right-click context menu search, tab placement control, and toggles for hiding feed content, sidebar elements, and notifications — all configurable from the popup. Built with **WXT** on top of Vite.
 
 ## Tech Stack
 
@@ -8,7 +8,7 @@
 - **UI (Popup):** Vue 3 Composition API + `<script setup>` + TypeScript
 - **Components:** [shadcn-vue](https://www.shadcn-vue.com/) (New York style) + [reka-ui](https://reka-ui.com/) + [Lucide](https://lucide.dev/) icons
 - **Styling:** [UnoCSS](https://unocss.dev/) (Preset Wind 3) + [unocss-preset-shadcn](https://github.com/unocss-community/unocss-preset-shadcn)
-- **State:** [wxt/storage](https://wxt.dev/guide/essentials/storage.html) wrapped in Vue composables (`useStoredValue`, `useFeatureState`)
+- **State:** [wxt/storage](https://wxt.dev/guide/essentials/storage.html) wrapped in Vue composables (`useStoredValue`, `useFeature`, `useFeatureMap`)
 - **i18n:** [vue-i18n](https://vue-i18n.intlify.dev/) with JSON locale files in `assets/locales/` and extension manifest messages in `public/_locales/`
 - **Tooling:** [Vite+](https://vite.plus/) (`vp`) — see section below
 - **Package Manager:** pnpm (via Vite+ `vp add` / `vp install`)
@@ -17,11 +17,13 @@
 
 ```
 Popup (Vue) ──write──> wxt/storage <──watch── Content Script
-                          │
-                    Feature toggle changes
-                    trigger onFeatureChange
-                    callbacks that apply/remove
-                    DOM mutations
+                           │
+                     Feature toggle changes
+                     trigger onFeatureChange
+                     callbacks that apply/remove
+                     DOM mutations
+
+Background (Vue) ──watch──> wxt/storage (contextMenuSearch, useIntlSearch)
 ```
 
 ## Conventions
@@ -34,7 +36,6 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
   ```text
   <srcDir>/components/*
   <srcDir>/composables/*
-  <srcDir>/hooks/*
   <srcDir>/utils/*
   ```
 
@@ -44,12 +45,22 @@ Popup (Vue) ──write──> wxt/storage <──watch── Content Script
 
   As a result, all named and default exports from these locations are available globally across the project without explicit imports in `.vue` files.
 
-  **Do not import them manually.** If you encounter errors, first run `vp run prepare` to regenerate types or restart the dev server. Only investigate further if the issue persists.
+  **Do not import them manually.** If you encounter type errors, run `vp run postinstall` (`wxt prepare`) to regenerate types, or restart the dev server. Only investigate further if the issue persists.
 
 - **Use Standard Components:**
-  Prioritize provided components for consistency. As needed, add new ones to components/ui/ via shadcn-vue. You can retrieve shadcn-vue skills from `.agents/skills/shadcn-vue` or utilize its MCP server.
+  Prioritize provided components for consistency. As needed, add new ones to `components/ui/` via shadcn-vue. You can retrieve shadcn-vue skills from `.agents/skills/shadcn-vue` or utilize its MCP server.
 
-- **Adding a feature:** Define it in `shared/const.ts` under a `FEATURE_GROUPS` entry, create an impl file in `entrypoints/rednote.content/impl/`, export it from `impl/index.ts`, add it to the `featureRegistrations` array in `features.ts`, and add i18n keys to `assets/locales/*.json`.
+- **Adding a feature:**
+  1. Define the feature key and metadata in `shared/const.ts` under a `FEATURE_GROUPS` entry
+  2. Create an implementation file in `entrypoints/rednote.content/impl/`
+  3. Export it from `impl/index.ts`
+  4. Add it to the `featureRegistrations` array in `entrypoints/rednote.content/features.ts`
+  5. Add i18n keys to `assets/locales/*.json`
+  6. If the feature needs a popup toggle, add the corresponding UI
+
+- **Utility helpers:**
+  - `utils/index.ts` exports `cn()` — a `clsx` + `tailwind-merge` helper for merging CSS classes.
+  - State composables are in `composables/`: `useStoredValue` (generic wxt/storage wrapper with async init) and `useFeature`/`useFeatureMap` (typed feature-flag composables).
 
 ## Build & Development
 
@@ -62,6 +73,8 @@ vp run compile      # Type-check with vue-tsc
 ```
 
 Use `vp check` to run format, lint, and type checks together.
+
+`vpr` is an alias for `vp run` and can be used to run any script defined in `package.json`.
 
 <!--VITE PLUS START-->
 
@@ -133,21 +146,3 @@ These commands map to their corresponding tools. For example, `vp dev --port 300
 - **Use Vite+ wrappers for one-off binaries:** Use `vp dlx` instead of package-manager-specific `dlx`/`npx` commands.
 - **Import JavaScript modules from `vite-plus`:** Instead of importing from `vite` or `vitest`, all modules should be imported from the project's `vite-plus` dependency. For example, `import { defineConfig } from 'vite-plus';` or `import { expect, test, vi } from 'vite-plus/test';`. You must not install `vitest` to import test utilities.
 - **Type-Aware Linting:** There is no need to install `oxlint-tsgolint`, `vp lint --type-aware` works out of the box.
-
-## CI Integration
-
-For GitHub Actions, consider using [`voidzero-dev/setup-vp`](https://github.com/voidzero-dev/setup-vp) to replace separate `actions/setup-node`, package-manager setup, cache, and install steps with a single action.
-
-```yaml
-- uses: voidzero-dev/setup-vp@v1
-  with:
-    cache: true
-- run: vp check
-- run: vp test
-```
-
-## Review Checklist for Agents
-
-- [ ] Run `vp install` after pulling remote changes and before getting started.
-- [ ] Run `vp check` and `vp test` to validate changes.
-<!--VITE PLUS END-->
