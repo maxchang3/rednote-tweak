@@ -17,6 +17,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
+  "[html]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
   "[css]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
