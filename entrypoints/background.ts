@@ -44,8 +44,6 @@ export default defineBackground(() => {
 
     const useIntl = await getFeatureValue('useIntlSearch')
 
-    await browser.tabs.create({
-      url: buildSearchURL(info.selectionText.trim(), useIntl),
-    })
+    await openSearchTab(info.selectionText.trim(), useIntl)
   })
 })

@@ -12,9 +12,7 @@ const submitSearch = async () => {
 
   if (!nextKeyword) return
 
-  await browser.tabs.create({
-    url: buildSearchURL(nextKeyword, useIntlSearch.value),
-  })
+  await openSearchTab(nextKeyword, useIntlSearch.value)
 }
 
 onMounted(() => {
