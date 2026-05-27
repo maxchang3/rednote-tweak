@@ -2,17 +2,15 @@
 
 ## [2.3.0](https://github.com/maxchang3/rednote-tweak/compare/v2.2.0...v2.3.0) (2026-05-27)
 
-
 ### Features
 
-* **popup:** add typing animation ([3b5472d](https://github.com/maxchang3/rednote-tweak/commit/3b5472d22937026cf79ad0b93f13d6dbceab910d))
-* **search:** place search tabs next to same-domain tabs ([9646238](https://github.com/maxchang3/rednote-tweak/commit/9646238325121bb02f5009cfb176a70f4224864c))
-
+- **popup:** add typing animation ([3b5472d](https://github.com/maxchang3/rednote-tweak/commit/3b5472d22937026cf79ad0b93f13d6dbceab910d))
+- **search:** place search tabs next to same-domain tabs ([9646238](https://github.com/maxchang3/rednote-tweak/commit/9646238325121bb02f5009cfb176a70f4224864c))
 
 ### Bug Fixes
 
-* **config:** change default locale from zh_CN to en ([83f41aa](https://github.com/maxchang3/rednote-tweak/commit/83f41aaa7aca205bcec9ac5e5ef167e5497b0f48))
-* **slashFocus:** improve input focus handling ([f7d2d93](https://github.com/maxchang3/rednote-tweak/commit/f7d2d93326dfb31219b61f340905c62c46113e03)), closes [#11](https://github.com/maxchang3/rednote-tweak/issues/11)
+- **config:** change default locale from zh_CN to en ([83f41aa](https://github.com/maxchang3/rednote-tweak/commit/83f41aaa7aca205bcec9ac5e5ef167e5497b0f48))
+- **slashFocus:** improve input focus handling ([f7d2d93](https://github.com/maxchang3/rednote-tweak/commit/f7d2d93326dfb31219b61f340905c62c46113e03)), closes [#11](https://github.com/maxchang3/rednote-tweak/issues/11)
 
 ## [2.2.0](https://github.com/maxchang3/rednote-tweak/compare/v2.1.0...v2.2.0) (2026-05-26)
 
