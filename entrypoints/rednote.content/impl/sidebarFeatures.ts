@@ -14,14 +14,14 @@ const hideNotificationButton = defineRootClassFeature(
   'RS_hide-sidebar-nav-notification',
 )
 
-export const hideNotificationBadge = defineRootClassFeature(
+const hideNotificationBadge = defineRootClassFeature(
   'hideNotificationBadge',
   'RS_hide-notification-badge',
 )
 
 const hideRedVideo = defineRootClassFeature('hideRedVideo', 'RS_hide-sidebar-nav-red-video')
 
-export const hideSidebarButton = [
+export const sidebarFeatures = [
   hideLivelistButton,
   hideAIChat,
   hidePublishButton,
