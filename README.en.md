@@ -37,4 +37,4 @@ If you prefer a lightweight version, you can install the userscript version: [Re
 
 ## License
 
-[MIT](./LICENSE) License © [maxchang3](https://github.com/maxchang3)
+[GPL v3](./LICENSE) License © [maxchang3](https://github.com/maxchang3)

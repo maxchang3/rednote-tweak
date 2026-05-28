@@ -39,4 +39,4 @@
 
 ## License
 
-[MIT](./LICENSE) License © [maxchang3](https://github.com/maxchang3)
+[GPL v3](./LICENSE) License © [maxchang3](https://github.com/maxchang3)
