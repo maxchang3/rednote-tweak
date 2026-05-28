@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { LanguagesIcon } from 'lucide-vue-next'
+import { LanguagesIcon } from '@lucide/vue'
 
 const modelValue = defineModel<string>()
 </script>

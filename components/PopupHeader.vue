@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ArrowLeftRightIcon } from 'lucide-vue-next'
+import { ArrowLeftRightIcon } from '@lucide/vue'
 
 defineProps<{
   title: string

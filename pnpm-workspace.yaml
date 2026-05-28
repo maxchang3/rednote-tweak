@@ -7,6 +7,8 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
+minimumReleaseAgeExclude:
+  - '@lucide/vue@1.17.0'
 overrides:
   vite: 'catalog:'
   vitest: 'catalog:'

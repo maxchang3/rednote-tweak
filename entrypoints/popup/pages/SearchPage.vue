@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { SearchIcon } from 'lucide-vue-next'
+import { SearchIcon } from '@lucide/vue'
 import laptop from '~/assets/laptop.svg'
 import laptop2 from '~/assets/laptop_2.svg'
 import laptop3 from '~/assets/laptop_3.svg'
