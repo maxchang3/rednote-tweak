@@ -2,11 +2,10 @@
 
 ## [2.3.1](https://github.com/maxchang3/rednote-tweak/compare/v2.3.0...v2.3.1) (2026-05-28)
 
-
 ### Bug Fixes
 
-* optimize animation frame images ([247b056](https://github.com/maxchang3/rednote-tweak/commit/247b05637e2391a8beca1640b2c1bc457100cd24))
-* **popup:** adapt to dark mode ([5340552](https://github.com/maxchang3/rednote-tweak/commit/53405528e6d10354910868c56ced6c577db9d682))
+- optimize animation frame images ([247b056](https://github.com/maxchang3/rednote-tweak/commit/247b05637e2391a8beca1640b2c1bc457100cd24))
+- **popup:** adapt to dark mode ([5340552](https://github.com/maxchang3/rednote-tweak/commit/53405528e6d10354910868c56ced6c577db9d682))
 
 ## [2.3.0](https://github.com/maxchang3/rednote-tweak/compare/v2.2.0...v2.3.0) (2026-05-27)
 
