@@ -36,10 +36,10 @@
 <!-- prettier-ignore -->
 | 浏览器 | 版本 |
 | - | - |
-| [GitHub Releases](https://github.com/maxchang3/rednote-tweak/releases) | [![Latest Version][extension-release-shield]][github-release-link] |
-| [Chrome](https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf) | [![Chrome Version][chrome-version-shield]][chrome-store-link] 或 [国内镜像][crxsoso-link]   |
-| [Firefox](https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/)                   | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
-| [Edge](https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld) | [![Edge Version][edge-version-shield]][edge-store-link] |
+| [GitHub Releases][github-release-link] | [![Latest Version][extension-release-shield]][github-release-link] |
+| [Chrome][chrome-store-link] | [![Chrome Version][chrome-version-shield]][chrome-store-link] 或 [国内镜像][crxsoso-link] |
+| [Firefox][firefox-store-link] | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
+| [Edge][edge-store-link] | [![Edge Version][edge-version-shield]][edge-store-link] |
 
 ## License
 
