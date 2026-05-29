@@ -1,15 +1,18 @@
 # 小红 RedNote Tweak
 
-[English](./README.en.md)
+<div align="center">
+  <img width="50%" src="https://github.com/user-attachments/assets/8a90a147-4533-4246-bec7-89d5091b8419" />
+  <img width="22%" src="https://github.com/user-attachments/assets/e1c195c0-093d-4c76-b256-f7e4eac63402" />
 
-<p align="center">
-  <img width="50%"  src="https://github.com/user-attachments/assets/8a90a147-4533-4246-bec7-89d5091b8419" />
-  <img width="23%"  src="https://github.com/user-attachments/assets/e1c195c0-093d-4c76-b256-f7e4eac63402" />
-</p>
+[![Latest Version][extension-release-shield]][github-release-link]
+[![GitHub Stars][github-star-shield]][github-star-link]<br/>
 
-增强小红书网页版的一些功能。
+**简体中文** · [English](./README.en.md)
 
-目前的主要功能有：
+</div>
+
+小红 RedNote Tweak 是一个增强小红书网页版的浏览器插件。目前的主要功能有：
+
 <img width="15%" align="right" src="https://github.com/user-attachments/assets/231de877-807f-4ea9-8b96-290003c0a670" />
 
 **搜索增强**：
@@ -22,21 +25,36 @@
 
 - **隐藏首页信息流**：隐藏主页信息流，搜索框页面居中
 - **隐藏「猜你想搜」**：隐藏搜索框下方的「猜你想搜」提示
-- **隐藏侧边栏中的**：**直播按钮**、**AI 聊天按钮**、**发布按钮**、**通知按钮**、**通知小红点**
+- **隐藏侧边栏元素**：**直播按钮**、**AI 聊天按钮**、**发布按钮**、**通知按钮**、**通知小红点**
 
-所有功能均可在弹窗设置中独立开启或关闭。
+> 💡 所有功能均可在弹窗设置中独立开启或关闭。
 
 ## 安装
 
-小红支持主流的 Chromium 和 Firefox 浏览器，可以通过以下途径安装：
+由于各浏览器插件商店的审核机制存在差异，版本更新可能会存在一定时间延迟。最新版本以 GitHub Releases 为准。
 
-- [Chrome Web Store](https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf)
-- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/)
-- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld)
-- [GitHub Releases](https://github.com/maxchang3/rednote-tweak/releases)
-
-如果你需要更轻量的版本，可以安装用户脚本版本：[Readnote-as-a-Search-Engine-JS](https://github.com/maxchang3/userscripts/tree/main/Readnote-as-a-Search-Engine-JS)。
+<!-- prettier-ignore -->
+| 浏览器 | 版本 |
+| - | - |
+| [GitHub Releases](https://github.com/maxchang3/rednote-tweak/releases) | [![Latest Version][extension-release-shield]][github-release-link] |
+| [Chrome](https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf) | [![Chrome Version][chrome-version-shield]][chrome-store-link] 或 [国内镜像][crxsoso-link]   |
+| [Firefox](https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/)                   | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
+| [Edge](https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld) | [![Edge Version][edge-version-shield]][edge-store-link] |
 
 ## License
 
 [GPL v3](./LICENSE) License © [maxchang3](https://github.com/maxchang3)
+
+<!-- Badge reference links, grouped by store -->
+
+[github-release-link]: https://github.com/maxchang3/rednote-tweak/releases
+[github-star-link]: https://github.com/maxchang3/rednote-tweak/stargazers
+[extension-release-shield]: https://img.shields.io/github/package-json/v/maxchang3/rednote-tweak?filename=package.json&style=flat-square&label=Latest%20Version&color=brightgreen&labelColor=red
+[github-star-shield]: https://img.shields.io/github/stars/maxchang3/rednote-tweak?style=flat-square&label=Stars&color=yellow&labelColor=red
+[chrome-store-link]: https://chromewebstore.google.com/detail/lgeopkdefgjoeijlpdgccfejfpomjihf
+[chrome-version-shield]: https://img.shields.io/chrome-web-store/v/lgeopkdefgjoeijlpdgccfejfpomjihf?style=flat-square&label=Chrome%20Version&labelColor=red&color=yellow
+[edge-store-link]: https://microsoftedge.microsoft.com/addons/detail/galfaogioipafnkphghioiimlmbkklld
+[edge-version-shield]: https://img.shields.io/badge/dynamic/json?style=flat-square&logo=microsoft-edge&label=Edge%20Version&query=%24.version&url=https://microsoftedge.microsoft.com/addons/getproductdetailsbycrxid/galfaogioipafnkphghioiimlmbkklld&labelColor=red&color=blue&prefix=v
+[firefox-store-link]: https://addons.mozilla.org/en-US/firefox/addon/rednote-tweak/
+[firefox-version-shield]: https://img.shields.io/amo/v/rednote-tweak?style=flat-square&label=Firefox%20Version&labelColor=red&color=orange
+[crxsoso-link]: https://www.crxsoso.com/webstore/detail/lgeopkdefgjoeijlpdgccfejfpomjihf
