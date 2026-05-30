@@ -29,6 +29,7 @@ declare module 'vue' {
     NativeSelect: typeof import('./components/ui/native-select/NativeSelect.vue')['default']
     NativeSelectOptGroup: typeof import('./components/ui/native-select/NativeSelectOptGroup.vue')['default']
     NativeSelectOption: typeof import('./components/ui/native-select/NativeSelectOption.vue')['default']
+    PopupFooter: typeof import('./components/PopupFooter.vue')['default']
     PopupHeader: typeof import('./components/PopupHeader.vue')['default']
     Spinner: typeof import('./components/ui/spinner/Spinner.vue')['default']
     Switch: typeof import('./components/ui/switch/Switch.vue')['default']

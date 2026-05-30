@@ -44,5 +44,7 @@ const currentPageTitle = computed(() => t(currentPageConfig.value.titleKey))
     <IntlSearchAlert :url="activeTabUrl" />
 
     <component :is="currentPageComponent" />
+
+    <PopupFooter />
   </div>
 </template>
