@@ -34,7 +34,7 @@ RedNote Tweak is a browser extension that enhances the RedNote (Xiaohongshu) web
 Due to differences in review processes across browser extension stores, version updates may experience delays. The latest version is always available on GitHub Releases.
 
 <!-- prettier-ignore -->
-| Browser | Version |
+| Platform | Version |
 | - | - |
 | [GitHub Releases][github-release-link] | [![Latest Version][extension-release-shield]][github-release-link] |
 | [Chrome][chrome-store-link] | [![Chrome Version][chrome-version-shield]][chrome-store-link] |

@@ -34,7 +34,7 @@
 由于各浏览器插件商店的审核机制存在差异，版本更新可能会存在一定时间延迟。最新版本以 GitHub Releases 为准。
 
 <!-- prettier-ignore -->
-| 浏览器 | 版本 |
+| 平台 | 版本 |
 | - | - |
 | [GitHub Releases][github-release-link] | [![Latest Version][extension-release-shield]][github-release-link] |
 | [Chrome][chrome-store-link] | [![Chrome Version][chrome-version-shield]][chrome-store-link] 或 [国内镜像][crxsoso-link] |
