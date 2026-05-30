@@ -43,7 +43,7 @@ const currentPageTitle = computed(() => t(currentPageConfig.value.titleKey))
 
     <IntlSearchAlert :url="activeTabUrl" />
 
-    <component :is="currentPageComponent" />
+    <component :is="currentPageComponent" :url="activeTabUrl" />
 
     <PopupFooter />
   </div>

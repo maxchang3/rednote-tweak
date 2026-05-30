@@ -1,6 +1,12 @@
 <script lang="ts" setup>
+const props = defineProps<{ url?: string }>()
+
 const { t } = useI18n()
 const { featureMap, isReady } = useFeatureMap()
+
+const isIntl = computed(() => isIntlDomain(props.url))
+
+const currentSite = computed(() => (isIntl.value ? 'intl' : 'main'))
 </script>
 
 <template>
@@ -19,16 +25,17 @@ const { featureMap, isReady } = useFeatureMap()
           group.groupId === 'general' ? 'flex flex-col gap-1 pb-2' : 'grid grid-cols-2 gap-2 pb-2'
         "
       >
-        <FeatureItem
-          v-for="feature in group.features"
-          :key="feature.id"
-          :feature-key="feature.id"
-          :title="t(`features.${feature.id}.title`)"
-          :description="
-            group.groupId === 'general' ? t(`features.${feature.id}.description`) : undefined
-          "
-          v-model="featureMap[feature.id].value"
-        />
+        <template v-for="feature in group.features" :key="feature.id">
+          <FeatureItem
+            v-if="!('onlyAt' in feature) || feature.onlyAt === currentSite"
+            :feature-key="feature.id"
+            :title="t(`features.${feature.id}.title`)"
+            :description="
+              group.groupId === 'general' ? t(`features.${feature.id}.description`) : undefined
+            "
+            v-model="featureMap[feature.id].value"
+          />
+        </template>
       </div>
     </section>
   </section>

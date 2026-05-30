@@ -8,7 +8,7 @@ export const FEATURE_GROUPS = [
     features: [
       { id: 'slashFocus', default: true },
       { id: 'contextMenuSearch', default: true },
-      { id: 'useIntlSearch', default: false },
+      { id: 'useIntlSearch', default: false, onlyAt: 'intl' },
     ],
   },
   {
@@ -21,10 +21,10 @@ export const FEATURE_GROUPS = [
   {
     groupId: 'sidebar',
     features: [
-      { id: 'hideLivelistButton', default: true },
-      { id: 'hideAIChat', default: false },
-      { id: 'hideRedVideo', default: true },
-      { id: 'hidePublishButton', default: false },
+      { id: 'hideLivelistButton', default: true, onlyAt: 'main' },
+      { id: 'hideAIChat', default: false, onlyAt: 'main' },
+      { id: 'hideRedVideo', default: true, onlyAt: 'main' },
+      { id: 'hidePublishButton', default: false, onlyAt: 'main' },
       { id: 'hideNotificationButton', default: false },
       { id: 'hideNotificationBadge', default: false },
     ],
