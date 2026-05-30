@@ -20,28 +20,28 @@
       "description": "Press / to focus the search box automatically."
     },
     "hideFeed": {
-      "title": "Hide timeline"
+      "title": "Feed"
     },
     "hideSearchSuggestions": {
-      "title": "Hide suggestions"
+      "title": "You may like"
     },
     "hideLivelistButton": {
-      "title": "Hide Livelist"
+      "title": "Livelist"
     },
     "hideAIChat": {
-      "title": "Hide AI Chat"
+      "title": "AI Chat"
     },
     "hidePublishButton": {
-      "title": "Hide Publish"
+      "title": "Publish"
     },
     "hideNotificationButton": {
-      "title": "Hide Notifs."
+      "title": "Notifications"
     },
     "hideNotificationBadge": {
-      "title": "Hide notif badge"
+      "title": "Badge"
     },
     "hideRedVideo": {
-      "title": "Hide RED"
+      "title": "RED Video"
     },
     "useIntlSearch": {
       "title": "Use international search",
@@ -56,7 +56,7 @@
   },
   "groups": {
     "general": "General",
-    "explore": "Explore",
-    "sidebar": "Sidebar"
+    "explore": "Hide in Explore",
+    "sidebar": "Hide in Sidebar"
   }
 }
