@@ -1,3 +1,5 @@
+export const STORAGE_KEY_FEATURE_PREFIX = (<const>'local:feature:') satisfies StorageItemKey
+
 export const getFeatureStorageKey = (featureKey: FeatureKey) =>
   `${STORAGE_KEY_FEATURE_PREFIX}${featureKey}` as const
 

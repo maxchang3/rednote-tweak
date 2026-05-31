@@ -1,6 +1,5 @@
-export const STORAGE_KEY_LOCALE = 'local:locale'
-export const STORAGE_KEY_FEATURE_PREFIX = 'local:feature:' as const
-export const STORAGE_KEY_SKIP_INTL_ALERT = 'local:skipIntlAlert'
+export const STORAGE_KEY_LOCALE = (<const>'local:locale') satisfies StorageItemKey
+export const STORAGE_KEY_SKIP_INTL_ALERT = (<const>'local:skipIntlAlert') satisfies StorageItemKey
 
 export const FEATURE_GROUPS = [
   {
