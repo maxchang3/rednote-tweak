@@ -24,7 +24,7 @@ RedNote Tweak is a browser extension that enhances the RedNote (Xiaohongshu) web
 **Page Optimizations**:
 
 - **Hide Home Feed**: Hide the homepage feed and center the search box
-- **Hide "Guess You Want to Search"**: Remove the default search suggestions below the search box
+- **Hide "You may like"**: Remove the default search suggestions below the search box
 - **Hide Sidebar Items**: **Live**, **AI Chat**, **Publish**, **Notifications**, and **Notification Badge**
 
 > 💡 All features can be toggled independently in the popup settings.
