@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.0](https://github.com/maxchang3/rednote-tweak/compare/v2.4.0...v2.5.0) (2026-05-31)
+
+
+### Features
+
+* add site-specific visibility constraints to feature keys ([ad5a3c9](https://github.com/maxchang3/rednote-tweak/commit/ad5a3c98557489a797a2d5e232dd72ea7219f87b))
+
+
+### Bug Fixes
+
+* **i18n:** improve English translation ([25a3f44](https://github.com/maxchang3/rednote-tweak/commit/25a3f44995177a7425b75a877457a3dcb8be96fd))
+
 ## [2.4.0](https://github.com/maxchang3/rednote-tweak/compare/v2.3.1...v2.4.0) (2026-05-30)
 
 ### Features
