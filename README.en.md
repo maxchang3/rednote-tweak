@@ -38,7 +38,7 @@ Due to differences in review processes across browser extension stores, version 
 | - | - |
 | [GitHub Releases][github-release-link] | [![Latest Version][extension-release-shield]][github-release-link] |
 | [Chrome][chrome-store-link] | [![Chrome Version][chrome-version-shield]][chrome-store-link] |
-| [Firefox][firefox-store-link]                   | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
+| [Firefox][firefox-store-link] | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
 | [Edge][edge-store-link] | [![Edge Version][edge-version-shield]][edge-store-link] |
 
 ## License
