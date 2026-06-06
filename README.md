@@ -41,6 +41,12 @@
 | [Firefox][firefox-store-link] | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
 | [Edge][edge-store-link] | [![Edge Version][edge-version-shield]][edge-store-link] |
 
+Safari (Mac) 需要单独打包操作，我尽可能每个版本都提供 Safari 版本，但可能会有一定延迟。请前往 [GitHub Releases][github-release-link] 查看。
+
+> Safari 版安装须知：
+>
+> 若无法启动「应用」，请先在系统设置中选择「仍然打开」或进行手动签名。随后，在 Safari 已开启开发者模式的前提下，进入设置中的「开发」菜单，勾选「允许未签名的扩展」，最后在「扩展」面板中勾选启用即可。
+
 ## License
 
 [GPL v3](./LICENSE) License © [maxchang3](https://github.com/maxchang3)

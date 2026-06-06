@@ -41,6 +41,12 @@ Due to differences in review processes across browser extension stores, version 
 | [Firefox][firefox-store-link] | [![Firefox Version][firefox-version-shield]][firefox-store-link] |
 | [Edge][edge-store-link] | [![Edge Version][edge-version-shield]][edge-store-link] |
 
+Due to the separate packaging process required for Safari (Mac), there may be some delay in providing Safari versions for each release. Please check [GitHub Releases][github-release-link] for the latest Safari version.
+
+> Safari Installation Notes:
+>
+> If you encounter issues launching the "app", first select "Open Anyway" in your system settings or perform manual signing. Then, with Safari's developer mode enabled, go to the "Develop" menu in settings, check "Allow unsigned extensions", and finally enable the extension in the "Extensions" panel.
+
 ## License
 
 [GPL v3](./LICENSE) License © [maxchang3](https://github.com/maxchang3)
