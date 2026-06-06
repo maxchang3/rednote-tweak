@@ -2,10 +2,9 @@
 
 ## [2.6.0](https://github.com/maxchang3/rednote-tweak/compare/v2.5.0...v2.6.0) (2026-06-06)
 
-
 ### Features
 
-* add hideWorldcup feature to hide World Cup 2026 sidebar entry ([f0da519](https://github.com/maxchang3/rednote-tweak/commit/f0da519192dea1ce8fe4111746c39a0a59b5b0e9))
+- add hideWorldcup feature to hide World Cup 2026 sidebar entry ([f0da519](https://github.com/maxchang3/rednote-tweak/commit/f0da519192dea1ce8fe4111746c39a0a59b5b0e9))
 
 ## [2.5.0](https://github.com/maxchang3/rednote-tweak/compare/v2.4.0...v2.5.0) (2026-05-31)
 
