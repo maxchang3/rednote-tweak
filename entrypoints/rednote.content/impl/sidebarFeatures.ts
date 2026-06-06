@@ -21,6 +21,8 @@ const hideNotificationBadge = defineRootClassFeature(
 
 const hideRedVideo = defineRootClassFeature('hideRedVideo', 'RS_hide-sidebar-nav-red-video')
 
+const hideWorldcup = defineRootClassFeature('hideWorldcup', 'RS_hide-sidebar-nav-worldcup')
+
 export const sidebarFeatures = [
   hideLivelistButton,
   hideAIChat,
@@ -28,4 +30,5 @@ export const sidebarFeatures = [
   hideNotificationButton,
   hideNotificationBadge,
   hideRedVideo,
+  hideWorldcup,
 ] as const

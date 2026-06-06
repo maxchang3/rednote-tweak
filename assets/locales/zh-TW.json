@@ -43,6 +43,9 @@
     "hideRedVideo": {
       "title": "隱藏 RED 影片"
     },
+    "hideWorldcup": {
+      "title": "隱藏世界盃入口"
+    },
     "useIntlSearch": {
       "title": "使用國際版搜尋",
       "description": "使用 rednote.com 進行搜尋。"

@@ -26,6 +26,7 @@ export const FEATURE_GROUPS = [
       { id: 'hidePublishButton', default: false, onlyAt: 'main' },
       { id: 'hideNotificationButton', default: false },
       { id: 'hideNotificationBadge', default: false },
+      { id: 'hideWorldcup', default: false, onlyAt: 'main' },
     ],
   },
 ] as const

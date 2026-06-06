@@ -71,7 +71,8 @@
 .RS_hide-sidebar-nav-ai-chat :is(li, .bottom-channel):has(a[href^='/ai_chat']),
 .RS_hide-sidebar-nav-publish :is(li, .bottom-channel):has(a[href^='https://creator']),
 .RS_hide-sidebar-nav-notification :is(li, .bottom-channel):has(a[href='/notification']),
-.RS_hide-sidebar-nav-red-video :is(li, .bottom-channel):has(a[href^='/red_video']) {
+.RS_hide-sidebar-nav-red-video :is(li, .bottom-channel):has(a[href^='/red_video']),
+.RS_hide-sidebar-nav-worldcup :is(li, .bottom-channel):has(a[href^='/worldcup26']) {
   display: none !important;
 }
 
