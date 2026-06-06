@@ -5,6 +5,7 @@ import UnoCSS from 'unocss/vite'
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
+  modules: ['@wxt-dev/module-vue', '@wxt-dev/auto-icons', 'wxt-module-safari-xcode'],
   manifest: {
     name: '__MSG_extName__',
     description: '__MSG_extDescription__',
@@ -20,7 +21,11 @@ export default defineConfig({
       },
     },
   },
-  modules: ['@wxt-dev/module-vue', '@wxt-dev/auto-icons'],
+  safariXcode: {
+    projectName: '小红 RedNote Tweak',
+    appCategory: 'public.app-category.productivity',
+    bundleIdentifier: 'me.maxchang.rednote-tweak.extension',
+  },
   autoIcons: {
     baseIconPath: 'assets/icon.png',
   },
