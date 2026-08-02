@@ -35,7 +35,7 @@ export const slashFocus = defineFeature({
 
         if (targets.length > 0) {
           // Always focus the last input
-          targets[targets.length - 1].focus()
+          targets[targets.length - 1]?.focus()
         }
       }
 
