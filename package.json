@@ -30,7 +30,7 @@
     "@intlify/unplugin-vue-i18n": "^11.1.2",
     "@unocss/preset-wind3": "^66.7.0",
     "@unocss/transformer-directives": "^66.7.0",
-    "@wxt-dev/auto-icons": "^1.1.1",
+    "@wxt-dev/auto-icons": "^1.1.2",
     "@wxt-dev/module-vue": "^1.0.3",
     "shadcn-vue": "^2.7.3",
     "typescript": "^5.9.3",
@@ -40,7 +40,8 @@
     "unplugin-vue-components": "^32.0.0",
     "vite-plus": "catalog:",
     "vue-tsc": "^3.2.7",
-    "wxt": "^0.20.26",
+    "web-ext": "^10.5.0",
+    "wxt": "^0.21.3",
     "wxt-module-safari-xcode": "^0.2.2"
   },
   "packageManager": "pnpm@11.4.0"
