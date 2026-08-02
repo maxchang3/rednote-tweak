@@ -1,6 +1,5 @@
-/** 信息流初始样式（过渡用） */
-#mfContainer:not(:has(.search-area)), /** 旧版本容器不包含搜索区域 */
-#exploreFeeds,
+/** 信息流初始样式（旧版容器、频道栏） */
+#mfContainer:not(:has(.search-area)),
 .channel-container {
   opacity: 1;
   transform: translateY(0);
@@ -10,14 +9,41 @@
   will-change: opacity, transform;
 }
 
-/** 净化信息流 */
+/**
+ * 新版信息流：
+ * opacity 作用于卡片，transform 作用于卡片内部。
+ * 不直接修改 #exploreFeeds，避免影响其中的 fixed 刷新按钮。
+ */
+#exploreFeeds > .note-item {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#exploreFeeds > .note-item > div {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/** 净化信息流（旧版容器、频道栏、骨架屏） */
 .RS_hide-feed #mfContainer:not(:has(.search-area)),
-.RS_hide-feed #exploreFeeds,
 .RS_hide-feed .channel-container,
 .RS_hide-feed #ssr-skeleton {
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none !important;
+}
+
+/**
+ * 净化新版信息流卡片。
+ * 不隐藏 #exploreFeeds 本身，因此 .floating-btn-sets 和 .reload 保持可见、可点击。
+ */
+.RS_hide-feed #exploreFeeds > .note-item {
+  opacity: 0;
+  pointer-events: none !important;
+}
+
+.RS_hide-feed #exploreFeeds > .note-item > div {
+  transform: translateY(10px);
 }
 
 .RS_hide-feed #mfContainer:has(.search-area),
