@@ -21,6 +21,7 @@ export default defineConfig({
       },
     },
   },
+  // @ts-ignore
   safariXcode: {
     projectName: '小红 RedNote Tweak',
     appCategory: 'public.app-category.productivity',
