@@ -2,18 +2,16 @@
 
 ## [2.7.0](https://github.com/maxchang3/rednote-tweak/compare/v2.6.0...v2.7.0) (2026-08-02)
 
-
 ### Features
 
-* add hideAISearchResult feature to hide AI card on search page ([8c1d076](https://github.com/maxchang3/rednote-tweak/commit/8c1d07624c4b49e5a1a3efa54a466c873bc4df30))
-* **hideFeed:** add floating feed visibility toggle ([1d3df7c](https://github.com/maxchang3/rednote-tweak/commit/1d3df7c1a0d841549401a31a4964e943ee975b14))
-* **hideFeed:** 新增悬浮信息流显示切换按钮 ([1d3df7c](https://github.com/maxchang3/rednote-tweak/commit/1d3df7c1a0d841549401a31a4964e943ee975b14))
-
+- add hideAISearchResult feature to hide AI card on search page ([8c1d076](https://github.com/maxchang3/rednote-tweak/commit/8c1d07624c4b49e5a1a3efa54a466c873bc4df30))
+- **hideFeed:** add floating feed visibility toggle ([1d3df7c](https://github.com/maxchang3/rednote-tweak/commit/1d3df7c1a0d841549401a31a4964e943ee975b14))
+- **hideFeed:** 新增悬浮信息流显示切换按钮 ([1d3df7c](https://github.com/maxchang3/rednote-tweak/commit/1d3df7c1a0d841549401a31a4964e943ee975b14))
 
 ### Bug Fixes
 
-* **hideFeed:** keep bottom-right refresh/floating buttons usable when feed hidden ([f3b956b](https://github.com/maxchang3/rednote-tweak/commit/f3b956b204bcdb6fd547e2caa3f7cc61d3ec6c43))
-* **slashFocus:** use optional chaining to safely focus last input ([d4ae9a9](https://github.com/maxchang3/rednote-tweak/commit/d4ae9a9230c9c06bb2d03c74e1f5c08f6ad6551c))
+- **hideFeed:** keep bottom-right refresh/floating buttons usable when feed hidden ([f3b956b](https://github.com/maxchang3/rednote-tweak/commit/f3b956b204bcdb6fd547e2caa3f7cc61d3ec6c43))
+- **slashFocus:** use optional chaining to safely focus last input ([d4ae9a9](https://github.com/maxchang3/rednote-tweak/commit/d4ae9a9230c9c06bb2d03c74e1f5c08f6ad6551c))
 
 ## [2.6.0](https://github.com/maxchang3/rednote-tweak/compare/v2.5.0...v2.6.0) (2026-06-06)
 
