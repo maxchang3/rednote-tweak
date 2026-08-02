@@ -1,6 +1,12 @@
 import type { ContentScriptContext } from 'wxt/utils/content-script-context'
 import { initRouter, onRouteChange } from './router'
-import { hideFeed, hideSearchSuggestions, sidebarFeatures, slashFocus } from './impl'
+import {
+  hideAISearchResult,
+  hideFeed,
+  hideSearchSuggestions,
+  sidebarFeatures,
+  slashFocus,
+} from './impl'
 
 interface FeatureContext {
   key: FeatureKey
@@ -18,6 +24,7 @@ export interface FeatureRegistration<T extends FeatureKey> {
 const featureRegistrations = [
   hideFeed,
   hideSearchSuggestions,
+  hideAISearchResult,
   slashFocus,
   ...sidebarFeatures,
 ] as const

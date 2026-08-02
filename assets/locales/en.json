@@ -25,6 +25,10 @@
     "hideSearchSuggestions": {
       "title": "You may like"
     },
+    "hideAISearchResult": {
+      "title": "AI search card",
+      "description": "Hide the AI card on the right side of search results."
+    },
     "hideLivelistButton": {
       "title": "Livelist"
     },
@@ -60,6 +64,7 @@
   "groups": {
     "general": "General",
     "explore": "Hide in Explore",
+    "search": "Hide in Search",
     "sidebar": "Hide in Sidebar"
   }
 }

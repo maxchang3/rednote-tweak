@@ -25,6 +25,9 @@
     "hideSearchSuggestions": {
       "title": "隐藏猜你想搜"
     },
+    "hideAISearchResult": {
+      "title": "隐藏 AI 卡片"
+    },
     "hideLivelistButton": {
       "title": "隐藏直播"
     },
@@ -60,6 +63,7 @@
   "groups": {
     "general": "通用",
     "explore": "发现",
+    "search": "搜索",
     "sidebar": "侧边栏"
   }
 }

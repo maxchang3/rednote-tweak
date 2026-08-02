@@ -1,4 +1,5 @@
 export * from './hideFeed'
+export * from './hideAISearchResult'
 export * from './hideSearchSuggestions'
 export * from './slashFocus'
 export * from './sidebarFeatures'

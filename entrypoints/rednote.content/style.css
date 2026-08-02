@@ -108,6 +108,13 @@
   display: none !important;
 }
 
+/* 隐藏搜索结果中的 AI 卡片 */
+.RS_hide-ai-search-result .xhs-ai-message-card,
+.RS_hide-ai-search-result .search_result_ai,
+.RS_hide-ai-search-result .ai-chat-section {
+  display: none !important;
+}
+
 /** 隐藏通知角标 */
 .RS_hide-notification-badge .badge-container .count {
   display: none !important;

@@ -25,6 +25,10 @@
     "hideSearchSuggestions": {
       "title": "隱藏猜你想搜"
     },
+    "hideAISearchResult": {
+      "title": "隱藏搜尋 AI 卡片",
+      "description": "屏蔽小紅書搜尋結果頁右側的 AI 卡片。"
+    },
     "hideLivelistButton": {
       "title": "隱藏直播"
     },
@@ -60,6 +64,7 @@
   "groups": {
     "general": "一般",
     "explore": "發現",
+    "search": "搜尋",
     "sidebar": "側邊欄"
   }
 }
