@@ -59,11 +59,13 @@
 
 /* 调整搜索区域的整体垂直位置（新版） */
 .RS_hide-feed .search-area {
+  position: relative;
+  z-index: 1;
   transform: translateY(155%);
 }
 
 /* 调整独立搜索框的位置（旧版） */
-.RS_hide-feed .input-box:not(.search-box-in-content) {
+.RS_hide-feed:not(:has(.search-area)) .input-box:not(.search-box-in-content) {
   top: 35%;
   left: 55% !important;
 }
@@ -74,20 +76,20 @@
 
 /** 移动端搜索框适配 */
 @media screen and (max-width: 695px) {
-  .RS_hide-feed .input-box:not(.search-box-in-content) {
+  .RS_hide-feed:not(:has(.search-area)) .input-box:not(.search-box-in-content) {
     width: 80% !important;
     padding: 0 84px 0 16px !important;
   }
 
-  .RS_hide-feed .min-width-search-icon {
+  .RS_hide-feed:not(:has(.search-area)) .min-width-search-icon {
     display: none !important;
   }
 
-  .RS_hide-feed .input-button {
+  .RS_hide-feed:not(:has(.search-area)) .input-button {
     opacity: 1 !important;
   }
 
-  .RS_hide-feed #search-input {
+  .RS_hide-feed:not(:has(.search-area)) #search-input {
     padding: 10px;
   }
 }
@@ -111,6 +113,21 @@
 .RS_hide-ai-search-result .xhs-ai-message-card,
 .RS_hide-ai-search-result .search_result_ai,
 .RS_hide-ai-search-result .ai-chat-section {
+  display: none !important;
+}
+
+/* 信息流切换按钮 — 深克隆原生 reload，直接复用页面 scoped 样式 */
+.RS_feed-toggle {
+  cursor: pointer;
+}
+
+.RS_feed-toggle .btn-wrapper .RS_feed-toggle-icon {
+  fill: none;
+  stroke: currentColor;
+}
+
+/* 隐藏信息流时仅保留扩展提供的切换按钮 */
+.RS_hide-feed .floating-btn-sets > :not(.RS_feed-toggle-wrapper) {
   display: none !important;
 }
 

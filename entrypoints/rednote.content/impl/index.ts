@@ -1,4 +1,5 @@
 export * from './hideFeed'
+export * from './feedToggle'
 export * from './hideAISearchResult'
 export * from './hideSearchSuggestions'
 export * from './slashFocus'

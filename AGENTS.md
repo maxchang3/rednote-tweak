@@ -62,6 +62,9 @@ Background (Vue) ──watch──> wxt/storage (contextMenuSearch, useIntlSearc
   - `utils/index.ts` exports `cn()` — a `clsx` + `tailwind-merge` helper for merging CSS classes.
   - State composables are in `composables/`: `useStoredValue` (generic wxt/storage wrapper with async init) and `useFeature`/`useFeatureMap` (typed feature-flag composables).
 
+- **Commit messages:**
+  Use two Conventional Commit sections separated by blank lines: an English subject and description first, followed by a Chinese subject with the same type/scope and its Chinese description. This lets release-please extract both language subjects into the changelog.
+
 ## Build & Development
 
 ```sh
