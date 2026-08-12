@@ -36,5 +36,14 @@
   "i18n-ally.localesPaths": ["assets/locales"],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.enabledFrameworks": ["vue"],
-  "i18n-ally.sourceLanguage": "en"
+  "i18n-ally.sourceLanguage": "en",
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Use two Conventional Commit sections separated by blank lines:" },
+    {
+      "text": "an English subject and description first, followed by a Chinese subject with the same type/scope and its Chinese description."
+    },
+    {
+      "text": "e.g.:\n\nfix(search): fix the search bug\n\nfix(search): 修复搜索功能的 bug\n\nSome additional notes..."
+    }
+  ]
 }
