@@ -10,7 +10,7 @@ const renderButtonState = (button: HTMLElement, isFeedHidden: boolean) => {
   const iconEl = button.querySelector<HTMLElement>('.btn-wrapper')
   const tipEl = button.querySelector<HTMLElement>('.tip-text')
 
-  if (iconEl) iconEl.innerHTML = isFeedHidden ? eyesOffSvg : eyesOnSvg
+  if (iconEl) iconEl.innerHTML = isFeedHidden ? eyesOnSvg : eyesOffSvg
   if (tipEl) tipEl.textContent = isFeedHidden ? '显示信息流' : '隐藏信息流'
 
   button.dataset.active = String(isFeedHidden)
