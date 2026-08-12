@@ -122,6 +122,7 @@
 /* 信息流切换按钮 — 深克隆原生 reload，直接复用页面 scoped 样式 */
 .RS_feed-toggle {
   cursor: pointer;
+  user-select: none;
 }
 
 .RS_feed-toggle .btn-wrapper .RS_feed-toggle-icon {
