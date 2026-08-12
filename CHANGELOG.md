@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.7.1](https://github.com/maxchang3/rednote-tweak/compare/v2.7.0...v2.7.1) (2026-08-12)
+
+
+### Bug Fixes
+
+* **feed:** adapt hidden feed layout to new style ([4415a90](https://github.com/maxchang3/rednote-tweak/commit/4415a902eb4a34e7b60aea0fbafcfb79dfb8d69d))
+* **feed:** 适配新版小红书的隐藏信息流布局 ([4415a90](https://github.com/maxchang3/rednote-tweak/commit/4415a902eb4a34e7b60aea0fbafcfb79dfb8d69d)), closes [#24](https://github.com/maxchang3/rednote-tweak/issues/24)
+* **search:** show AI search results by default ([a9c1055](https://github.com/maxchang3/rednote-tweak/commit/a9c10552e2b990d1988553a80f43eb1353c212d4))
+* **search:** 默认显示 AI 搜索结果 ([a9c1055](https://github.com/maxchang3/rednote-tweak/commit/a9c10552e2b990d1988553a80f43eb1353c212d4))
+
 ## [2.7.0](https://github.com/maxchang3/rednote-tweak/compare/v2.6.0...v2.7.0) (2026-08-02)
 
 ### Features
