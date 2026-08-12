@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.7.2](https://github.com/maxchang3/rednote-tweak/compare/v2.7.1...v2.7.2) (2026-08-12)
+
+### Bug Fixes
+
+- **feed:** correct icon state on feed toggle ([85cdf8f](https://github.com/maxchang3/rednote-tweak/commit/85cdf8f28d1f7275e1b5d32dcba0e44d4f5a6b3b))
+- **feed:** prevent text selection on feed toggle button ([c71c988](https://github.com/maxchang3/rednote-tweak/commit/c71c988783616475eff2cae789566f5d061e308c))
+- **feed:** support updated feed container structure ([72f6854](https://github.com/maxchang3/rednote-tweak/commit/72f68544ddb841b7b5a67429a02da718490263c0))
+- **feed:** 修正信息流切换按钮的图标状态 ([85cdf8f](https://github.com/maxchang3/rednote-tweak/commit/85cdf8f28d1f7275e1b5d32dcba0e44d4f5a6b3b))
+- **feed:** 兼容更新后的信息流容器结构 ([72f6854](https://github.com/maxchang3/rednote-tweak/commit/72f68544ddb841b7b5a67429a02da718490263c0)), closes [#24](https://github.com/maxchang3/rednote-tweak/issues/24)
+- **feed:** 防止信息流切换按钮文本被选中 ([c71c988](https://github.com/maxchang3/rednote-tweak/commit/c71c988783616475eff2cae789566f5d061e308c))
+
 ## [2.7.1](https://github.com/maxchang3/rednote-tweak/compare/v2.7.0...v2.7.1) (2026-08-12)
 
 ### Bug Fixes
