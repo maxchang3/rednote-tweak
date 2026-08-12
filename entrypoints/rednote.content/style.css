@@ -51,6 +51,10 @@
   overflow: hidden !important;
 }
 
+.RS_hide-feed #mfContainer:has(.search-area) {
+  position: relative;
+}
+
 .RS_hide-feed .mask-paper {
   background: none !important;
   backdrop-filter: none !important;
@@ -58,7 +62,7 @@
 }
 
 /* 将新版搜索区域放在视口的视觉中心，不依赖自身高度或兄弟节点顺序 */
-.RS_hide-feed #mfContainer > .feeds-content > .search-area {
+.RS_hide-feed #mfContainer .search-area {
   position: absolute;
   top: 43vh;
   inset-inline: var(--horizontalGapPx);
