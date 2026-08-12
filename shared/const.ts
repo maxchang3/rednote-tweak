@@ -19,7 +19,7 @@ export const FEATURE_GROUPS = [
   },
   {
     groupId: 'search',
-    features: [{ id: 'hideAISearchResult', default: true }],
+    features: [{ id: 'hideAISearchResult', default: false }],
   },
   {
     groupId: 'sidebar',
