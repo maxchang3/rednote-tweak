@@ -26,7 +26,7 @@
 
 /** 净化信息流（旧版容器、频道栏、骨架屏） */
 .RS_hide-feed #mfContainer:not(:has(.search-area)),
-.RS_hide-feed .channel-container,
+.RS_hide-feed #mfContainer .channel-container,
 .RS_hide-feed #ssr-skeleton {
   opacity: 0;
   transform: translateY(10px);
@@ -57,11 +57,14 @@
   min-height: 100vh;
 }
 
-/* 调整搜索区域的整体垂直位置（新版） */
-.RS_hide-feed .search-area {
-  position: relative;
+/* 将新版搜索区域放在视口的视觉中心，不依赖自身高度或兄弟节点顺序 */
+.RS_hide-feed #mfContainer > .feeds-content > .search-area {
+  position: absolute;
+  top: 43vh;
+  inset-inline: var(--horizontalGapPx);
+  width: auto;
   z-index: 1;
-  transform: translateY(155%);
+  transform: translateY(-50%);
 }
 
 /* 调整独立搜索框的位置（旧版） */
