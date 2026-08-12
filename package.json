@@ -1,6 +1,6 @@
 {
   "name": "rednote-tweak",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "private": true,
   "description": "Enhance the RedNote(Xiaohongshu) web experience.",
   "type": "module",
